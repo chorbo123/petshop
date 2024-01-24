@@ -1,0 +1,104 @@
+.breeders-litter-form-container {
+ @extend .container;
+}
+
+.breeders-litter-form{
+	@extend .box-column-bordered;
+ /*background: #fff;
+ margin: 20px 0;
+ padding: 0;*/
+ 
+ fieldset {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  
+  legend {
+   padding: 10px;
+   border: 1px solid #cccccc;
+   border-radius: 5px;
+   line-height: 1em;
+  }
+ }
+}
+
+.breeders-litter-form-button-back{
+    @extend .button-back;
+}
+
+.breeders-litter-form-button-back-icon{
+	@extend .button-back-icon;
+}
+
+.breeders-litter-form-required {
+	display:block;
+	margin-top: 20px;
+}
+
+.breeders-litter-form-controls-group{
+	/*@extend .control-group;*/
+}
+
+.breeders-litter-form-label{
+	/*@extend .input-label;*/
+ display: block;
+}
+
+.breeders-litter-form-required-star {
+	@extend .input-required;
+}
+
+.breeders-litter-form-input, .breeders-litter-form-select{
+	@extend .input-large;
+}
+
+.breeders-litter-form-textarea{
+	/*@extend .input-textarea;*/
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.breeders-litter-form-button-submit{
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.breeders-litter-form-button {
+	@extend .button-medium;
+	@extend .button-secondary;
+}
+
+.breeders-application-header {
+ margin: 0 0 10px;
+ padding: 20px;
+ border-radius: 10px;
+ text-align: center;
+}
+
+
+
+
+.breeders-litter-list-heading {
+ margin: 20px 0 0;
+}
+
+.breeders-litter-list-table {
+ 
+ th {
+  padding: 5px;
+  vertical-align: bottom;
+  font-size: 15px;
+ }
+ 
+ td {
+  padding: 5px;
+  vertical-align: middle;
+ }
+}
+
+.breeders-litter-list-checkbox {
+ width: 13%;
+ text-align: center;
+}

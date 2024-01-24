@@ -1,0 +1,53 @@
+.contact-form-container {
+ @extend .container;
+}
+
+.contact-form{
+	@extend .box-column-bordered
+}
+
+.contact-form-button-back{
+    @extend .button-back;
+}
+
+.contact-form-button-back-icon{
+	@extend .button-back-icon;
+}
+
+.contact-form-required {
+	display:block;
+	margin-top: 20px;
+}
+
+.contact-form-controls-group{
+	/*@extend .control-group;*/
+}
+
+.contact-form-label{
+	/*@extend .input-label;*/
+}
+
+.contact-form-required-star {
+	@extend .input-required;
+}
+
+.contact-form-input, .contact-form-select{
+	@extend .input-large;
+}
+
+.contact-form-textarea{
+	/*@extend .input-textarea;*/
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.contact-form-button-submit{
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.contact-form-button {
+	@extend .button-medium;
+	@extend .button-secondary;
+}

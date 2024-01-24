@@ -1,0 +1,163 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "homeSlidingBanners",
+        "group": "layout",
+        "title": "Home Sliding Banners",
+        "docRef": "bridgehead_8472599389483029232325499478",
+        "description": "Home Sliding Banner related configuration"
+    },
+    "properties": {
+        "homeSlidingBanners.enabled": {
+            "group": "layout",
+            "subtab": "homeSlidingBanners",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the home sliding banners should be enabled.",
+            "default": true
+        },
+        "homeSlidingBanners.banners": {
+            "group": "layout",
+            "subtab": "homeSlidingBanners",
+            "type": "array",
+            "title": "Banners",
+            "description": "The banner HTML for each slide",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "title": "Title",
+                        "description": "The title of the banner",
+                        "mandatory": true
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Link URL",
+                        "description": "The URL which the banner links to"
+                    },
+                    "dataTouchpoint": {
+                        "type": "string",
+                        "title": "Link Touchpoint",
+                        "description": "The touchpoint of the URL which the banner links to",
+                        "enum": ["home", "checkout", "customercentre"]
+                    },
+                    "dataHashtag": {
+                        "type": "string",
+                        "title": "Link Hashtag",
+                        "description": "The hashtag of the URL which the banner links to",
+                        "hidden": true
+                    },
+                    "mobileImageUrl": {
+                        "type": "string",
+                        "title": "Mobile Image URL",
+                        "description": "The URL of the mobile sized banner image"
+                    },
+                    "tabletImageUrl": {
+                        "type": "string",
+                        "title": "Tablet Image URL",
+                        "description": "The URL of the tablet sized banner image"
+                    },
+                    "desktopImageUrl": {
+                        "type": "string",
+                        "title": "Desktop Image URL",
+                        "description": "The URL of the desktop sized banner image"
+                    },
+                    "priority": {
+                        "type": "number",
+                        "title": "Priority",
+                        "description": "The priority ranking used to order banners when multiple matches are found. (Lower number = Higher rank)",
+                        "default": 0
+                    },
+                    "bannerHtml": {
+                        "type": "string",
+                        "nsType": "textarea",
+                        "title": "Banner HTML",
+                        "description": "Additional HTML for the banner (if required)",
+                        "hidden": true
+                    },
+                    "scheduledActivation": {
+                        "type": "string",
+                        "nsType": "datetimetz",
+                        "title": "Scheduled Activation",
+                        "description": "Enter the date/time to activate (DD/MM/YYYY HH:MM)"
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to set the line inactive.",
+                        "default": false
+                    }
+                }
+            },
+            "default": [
+                {
+                    "title": "Birthday",
+                    "url": "/Type/Birthday",
+                    "dataTouchpoint": "home",
+                    "dataHashtag": "#/Type/Birthday",
+                    "mobileImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Birthday-Mobile.gif",
+                    "tabletImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Birthday-Tablet.gif",
+                    "desktopImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Birthday-Desktop.gif",
+                    "priority": 0,
+                    "bannerHtml": ""
+                },
+                {
+                    "title": "ProPlan",
+                    "url": "/Pro-Plan-Sensitive-Digestion-Bundle",
+                    "dataTouchpoint": "home",
+                    "dataHashtag": "#/Pro-Plan-Sensitive-Digestion-Bundle",
+                    "mobileImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-ProPlan-Mobile.jpg",
+                    "tabletImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-ProPlan-Tablet.jpg",
+                    "desktopImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-ProPlan-Desktop.jpg",
+                    "priority": 1,
+                    "bannerHtml": ""
+                },
+                {
+                    "title": "Autarky",
+                    "url": "/Brand/Autarky/weight/10to",
+                    "dataTouchpoint": "home",
+                    "dataHashtag": "#/Brand/Autarky/weight/10to",
+                    "mobileImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Autarky-Mobile.jpg",
+                    "tabletImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Autarky-Tablet.jpg",
+                    "desktopImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Autarky-Desktop.jpg",
+                    "priority": 2,
+                    "bannerHtml": ""
+                },
+                {
+                    "title": "BreederCelect",
+                    "url": "/Brand/Breeder-Celect",
+                    "dataTouchpoint": "home",
+                    "dataHashtag": "#/Brand/Breeder-Celect",
+                    "mobileImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-BreederCelect-Mobile.jpg",
+                    "tabletImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-BreederCelect-Tablet.jpg",
+                    "desktopImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-BreederCelect-Desktop.jpg",
+                    "priority": 3,
+                    "bannerHtml": ""
+                },
+                {
+                    "title": "Hagen",
+                    "url": "/Brand/Catit,Zeus/Type/Keep-Cool",
+                    "dataTouchpoint": "home",
+                    "dataHashtag": "#/Brand/Catit,Zeus/Type/Keep-Cool",
+                    "mobileImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Hagen-Mobile.jpg",
+                    "tabletImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Hagen-Tablet.jpg",
+                    "desktopImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/July%202021/Homepage/HomepageBanners-July-Hagen-Desktop.jpg",
+                    "priority": 4,
+                    "bannerHtml": ""
+                },
+                {
+                    "title": "Huntland",
+                    "url": "/Brand/Huntland/Type/Bottomless-Bowl-Discount",
+                    "dataTouchpoint": "home",
+                    "dataHashtag": "#/Brand/Catit,Zeus/Type/Keep-Cool",
+                    "mobileImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Homepage/HomepageBanners-June-Huntland-Mobile.jpg",
+                    "tabletImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Homepage/HomepageBanners-June-Huntland-Tablet.jpg",
+                    "desktopImageUrl": "https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Homepage/HomepageBanners-June-Huntland-Desktop.jpg",
+                    "priority": 5,
+                    "bannerHtml": ""
+                }
+            ]
+        }
+    }
+}

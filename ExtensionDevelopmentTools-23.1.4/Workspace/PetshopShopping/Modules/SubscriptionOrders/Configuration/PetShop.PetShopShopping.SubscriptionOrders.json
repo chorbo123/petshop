@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "bottomlessBowlMessages",
+        "title": "Bottomless Bowl Messages",
+        "description": "Text prompt for bottomless bowl confirmation",
+        "group": "myAccountApp"
+    },
+    "properties": {
+        "subscriptionOrders.itemAsapMessage": {
+            "group": "myAccountApp",
+            "subtab": "bottomlessBowlMessages",
+            "type": "string",
+            "title": "Need Item ASAP Text",
+            "description": "Enter the text prompt that will appear for need item asap."
+        }
+    }
+}

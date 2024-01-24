@@ -1,0 +1,20 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "registrationMarketingOptions",
+        "title": "Registration Marketing Options",
+        "description": "",
+        "docRef": "bridgehead_002930293090",
+        "group": "layout"
+    },
+    "properties": {
+        "registrationMarketingOptions.defaultMarketingOptedIn": {
+            "group": "layout",
+            "subtab": "registrationMarketingOptions",
+            "type": "boolean",
+            "title": "Default Marketing Opted In",
+            "description": "",
+            "default": true
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "type": "object",
+        "subtab": {
+            "id": "footer",
+            "title": "Footer",
+            "description": "Footer settings",
+            "docRef": "bridgehead_4393101142",
+            "group": "layout"
+        },
+    "properties": {
+        "footer.navigationLinks": {
+            "group": "layout",
+            "subtab": "footer",
+            "type": "array",
+            "title": "Footer navigation",
+            "description": "Footer navigation links that goes in the footer",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "description": ""
+                    },
+                    "imageUrl": {
+                        "type": "string",
+                        "title": "Image URL",
+                        "description": "The URL of an image to be used instead of the text"
+                    },
+                    "href": {
+                         "type": "string",
+                         "title": "URL",
+                         "description": ""
+                    },
+                    "columnBreak": {
+                        "type": "boolean",
+                        "title": "Column Break",
+                        "description": "True will start a new link column"
+                    },
+                    "classes": {
+                        "type": "string",
+                        "title": "CSS Classes",
+                        "description": "CSS classes to add to the list element"
+                    }
+                }
+            },
+            "default": [
+            ]
+        }
+    }
+}

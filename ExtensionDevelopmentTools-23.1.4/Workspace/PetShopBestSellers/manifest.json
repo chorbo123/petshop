@@ -1,0 +1,72 @@
+{
+	"name": "PetShopBestSellers",
+	"fantasyName": "PetShop Best Sellers",
+	"vendor": "PetShop",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Fetches the best sellers from the previous day and displays them on the home page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/BestSellers.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BestSellers/Templates/petshop_petshopbestsellers_bestsellers.tpl",
+					"Modules/BestSellers/Templates/petshop_bestsellers_items.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/BestSellers/Sass/_petshopbestsellers-bestsellers.scss"
+		},
+		"files": [
+			"Modules/BestSellers/Sass/_petshopbestsellers-bestsellers.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/BestSellers/JavaScript/PetShop.PetShopBestSellers.BestSellers.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BestSellers/JavaScript/PetShop.PetShopBestSellers.BestSellers.js",
+					"Modules/BestSellers/JavaScript/BestSellers.View.js",
+					"Modules/BestSellers/JavaScript/PetShop.PetShopBestSellers.BestSellers.Model.js",
+					"Modules/BestSellers/JavaScript/PetShop.BestSeller.ItemView.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/BestSellers/SuiteScript/PetShop.PetShopBestSellers.BestSellers.js",
+		"files": [
+			"Modules/BestSellers/SuiteScript/PetShop.PetShopBestSellers.BestSellers.js",
+			"Modules/BestSellers/SuiteScript/BestSellers.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PetShop/PetShopBestSellers@1.0.0",
+	"activation_id": "6",
+	"extension_id": "6103"
+}

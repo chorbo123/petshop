@@ -1,0 +1,52 @@
+{
+ "type": "object",
+    "subtab": {
+        "id": "shoppingcart",
+        "group": "advancedSettings",
+        "title": "Shopping Cart",
+        "docRef": "bridgehead_37467436767347",
+        "description": "Settings for the shopping cart"
+    },
+    "subtab": {
+        "id": "productLists",
+        "group": "advancedSettings",
+        "title": "Product Lists",
+        "docRef": "bridgehead_37467436767347349876985908",
+        "description": "Settings for product lists"
+    },
+    "properties": {
+        "shoppingcart.defaultVatRate": {
+            "group": "advancedSettings",
+            "subtab": "shoppingcart",
+            "type": "integer",
+            "title": "Default VAT Rate",
+            "description": "The default VAT rate used for calculating VAT inclusive shipping, discounts and gift certificates in the shopping cart.",
+            "mandatory": true,
+            "default": "20"
+        },
+        "productLists.selectMinPriceOptionByDefault": {
+            "group": "advancedSettings",
+            "subtab": "shoppingcart",
+            "type": "boolean",
+            "title": "Select Minimum Price Option By Default",
+            "description": "Select minimum price Option by default for an item including price quantity breaks and bottomless bowl discounts on Product Detail pricing options.",
+            "default": true
+        },
+        "productLists.displayMinPriceAvailable": {
+            "group": "advancedSettings",
+            "subtab": "shoppingcart",
+            "type": "boolean",
+            "title": "Display Minimum Price Available on Product Lists",
+            "description": "Displays the minimum Price available for an item including price quantity breaks and bottomless bowl discounts on Product Lists.",
+            "default": false
+        },
+        "shoppingcart.freeDeliveryOrderLimit": {
+            "group": "advancedSettings",
+            "subtab": "shoppingcart",
+            "type": "number",
+            "title": "Free delivery order minimum",
+            "description": "Sets the free delivery order minimum.",
+            "default": 54.99
+        }
+    }
+}

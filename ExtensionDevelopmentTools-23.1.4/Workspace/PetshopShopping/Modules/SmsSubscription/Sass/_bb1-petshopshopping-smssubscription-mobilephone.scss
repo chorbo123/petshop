@@ -1,0 +1,83 @@
+.global-views-mobile-phone-controls{}
+
+.global-views-mobile-phone-label{}
+
+.global-views-mobile-phone-required{
+	@extend .input-required;
+}
+
+input.global-views-mobile-phone-input {
+	@extend .input-large;
+	min-width: 210px;
+ margin-bottom: 0;
+}
+
+.global-views-mobile-phone-submit {
+	@extend .button-large;
+	@extend .button-primary;
+}
+
+.global-views-mobile-phone-messages{
+	@extend .form-messages !optional;
+}
+
+.global-views-mobile-phone-optional{
+	@extend .register-form-optional !optional;
+}
+
+.global-views-mobile-phone-help-block{
+	@extend .register-form-help-block !optional;
+}
+
+.login-register-register-form{
+	@extend .register-form !optional;
+}
+
+.global-views-mobile-phone-input-group{
+	@extend .input-group !optional;
+}
+
+.global-views-mobile-phone-input-group-btn{
+	@extend .input-group-btn !optional;
+ vertical-align: top;
+}
+
+.global-views-mobile-phone-dropdown{
+	@extend .btn !optional;
+ @extend .btn-default !optional;
+ @extend .dropdown-toggle !optional;
+ padding: 8px 10px;
+ width: 90px;
+ vertical-align: middle;
+ font-size: 15px;
+ background-color: white;
+ border: 1px solid #97ccdf;
+ border-radius: 0;
+ 
+ img {
+  vertical-align: sub;
+  height: 16px;
+ }
+}
+
+.global-views-mobile-phone-calling-code {
+ margin: 0 5px;
+}
+
+.global-views-mobile-phone-dropdown-menu{
+	@extend .dropdown-menu !optional;
+ min-width: 190px;
+ 
+ img {
+  vertical-align: sub;
+  height: 16px;
+ }
+}
+
+.global-views-mobile-phone-control{
+	@extend .form-control !optional;
+ 
+ p[data-validation-error="block"] {
+  margin-left: -89px;
+ }
+}

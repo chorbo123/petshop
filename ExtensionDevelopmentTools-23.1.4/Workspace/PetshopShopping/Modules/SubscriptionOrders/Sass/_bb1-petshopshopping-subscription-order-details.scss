@@ -1,0 +1,56 @@
+.subscriptionorder-details{
+	@extend .box-column-bordered
+}
+
+.subscriptionorder-details-button-back{
+    @extend .button-back;
+}
+
+.subscriptionorder-details-button-back-icon{
+	@extend .button-back-icon;
+}
+
+.subscriptionorder-details-required {
+	display:block;
+	margin-top: 20px;
+}
+
+.subscriptionorder-details-controls-group{
+	/*@extend .control-group;*/
+ margin-top: 20px;
+}
+
+.subscriptionorder-details-label{
+	/*@extend .input-label;*/
+}
+
+.subscriptionorder-details-required-star {
+	@extend .input-required;
+}
+
+.subscriptionorder-details-input, .subscriptionorder-details-select{
+	@extend .input-large;
+}
+
+.subscriptionorder-details-textarea{
+	/*@extend .input-textarea;*/
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.subscriptionorder-details-button-submit{
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.subscriptionorder-details-button {
+	@extend .button-medium;
+	@extend .button-secondary;
+	margin-top: 15px;
+}
+
+.subscriptionorder-details-header{}
+.subscriptionorder-details-title{}
+.subscriptionorder-details-alert-placeholder{}
+.subscriptionorder-details-include-email{}

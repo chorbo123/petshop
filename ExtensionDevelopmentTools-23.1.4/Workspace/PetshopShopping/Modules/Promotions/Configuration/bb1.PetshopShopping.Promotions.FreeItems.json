@@ -1,0 +1,57 @@
+{
+    "type": "object",
+    "group": {
+        "id": "promotionsSettings",
+        "title": "Promotions",
+        "description": "Promotions configuration"
+    },
+    "subtab": {
+        "id": "freeItemsStep",
+        "group": "promotionsSettings",
+        "title": "Free Items Checkout Step",
+        "docRef": "bridgehead_662941093885885",
+        "description": "Free Items Checkout Step related configuration"
+    },
+    "properties": {
+        "promotions.checkout.freeItemsStep.enabled": {
+            "group": "promotionsSettings",
+            "subtab": "freeItemsStep",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the Free Items checkout step should be enabled.",
+            "default": true
+        },
+        "promotions.checkout.freeItemsStep.title": {
+            "group": "promotionsSettings",
+            "subtab": "freeItemsStep",
+            "type": "string",
+            "title": "Page Title",
+            "description": "Enter the page title for this checkout step.",
+            "default": "Freebies"
+        },
+        "promotions.checkout.freeItemsStep.urlComponent": {
+            "group": "promotionsSettings",
+            "subtab": "freeItemsStep",
+            "type": "string",
+            "title": "URL Component",
+            "description": "Enter the URL component for this checkout step.",
+            "default": "freebies"
+        },
+        "promotions.checkout.freeItemsStep.heading": {
+            "group": "promotionsSettings",
+            "subtab": "freeItemsStep",
+            "type": "string",
+            "title": "Heading",
+            "description": "Enter the section heading for this checkout step.",
+            "default": "Claim Your Freebie"
+        },
+        "promotions.checkout.freeItemsStep.actionButtonLabel": {
+            "group": "promotionsSettings",
+            "subtab": "freeItemsStep",
+            "type": "string",
+            "title": "Action Button Label",
+            "description": "Enter the action button text for each item displayed.",
+            "default": "Add Freebie!"
+        }
+    }
+}

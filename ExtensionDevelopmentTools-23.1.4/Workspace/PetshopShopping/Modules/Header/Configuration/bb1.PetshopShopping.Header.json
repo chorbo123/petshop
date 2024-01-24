@@ -1,0 +1,83 @@
+{
+	"type": "object",
+    "properties": {
+        "header.rotatingBanners.enabled": {
+            "group": "layout",
+            "subtab": "header",
+            "type": "boolean",
+            "title": "Enable Rotating Banners",
+            "description": "Select if the Header Rotating Banners should be enabled.",
+            "default": true
+        },
+        "header.rotatingBanners.banners": {
+            "group": "layout",
+            "subtab": "header",
+            "type": "array",
+            "title": "Banners",
+            "description": "The banners displayed in the header slider.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "bannerHtml": {
+                        "type": "string",
+                        "nsType": "textarea",
+                        "title": "Banner HTML",
+                        "description": "The HTML of the banner.",
+                        "mandatory": true
+                    },
+                    "bannerUrl": {
+                        "type": "string",
+                        "title": "URL",
+                        "description": "The URL of the banner."
+                    },
+                    "bannerTouchpoint": {
+                        "type": "string",
+                        "enum": ["home", "checkout", "customercentre", ""],
+                        "title": "Touchpoint",
+                        "description": "The Touchpoint of the Banner URL."
+                    },
+                    "bannerHashTag": {
+                        "type": "string",
+                        "title": "Hash Tag",
+                        "description": "The Hash Tag of the banner."
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to hide this banner"
+                    }
+                }
+            },
+            "default": [
+            {
+                "bannerHtml": "<h4>About Us</h4><p>Prince’s Trust Funded Business</p>",
+                "bannerUrl": "/About-Us",
+                "bannerTouchpoint": "home",
+                "bannerHashTag": "#About-Us",
+                "inactive": false
+            },
+            {
+                "bannerHtml": "<h4>Delivery</h4><p>FREE for most orders over £19.99</p>",
+                "bannerUrl": "/delivery",
+                "bannerTouchpoint": "home",
+                "bannerHashTag": "#delivery",
+                "inactive": false
+            },
+            {
+                "bannerHtml": "<h4>Google Customer Reviews</h4><p>Happy Pet Parents - <span class=\"gold\">4.9</span> <img src=\"/shopflow/img/petshop-2019-header-banner-review-stars.png\" alt=\"\" data-loader=\"false\" /></p>",
+                "bannerUrl": "/",
+                "bannerTouchpoint": "home",
+                "bannerHashTag": "#",
+                "inactive": false
+            },
+            {
+                "bannerHtml": "<h4>Save up to 15% Extra</h4><p>with Bottomless Bowl</p>",
+                "bannerUrl": "/Type/Bottomless-Bowl-Discount",
+                "bannerTouchpoint": "home",
+                "bannerHashTag": "#Type/Bottomless-Bowl-Discount",
+                "inactive": false
+            }
+           ]
+        }
+    }
+}

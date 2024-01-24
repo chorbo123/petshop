@@ -1,0 +1,148 @@
+{
+	"name": "Blog",
+	"fantasyName": "Bluebridge One Blog",
+	"vendor": "bb1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Blog extension for SCA web stores.",
+	"assets": {
+		"fonts": {
+			"files": []
+		},
+		"img": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/BlogComments.Service.ss",
+				"services/BlogPosts.Service.ss",
+				"services/BlogSettings.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Blog/Templates/bb1_blog_archive_home.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_by_month.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_by_year.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_category_list.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_form_submitted.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_form.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_container.tpl",
+					"Modules/Blog/Templates/bb1_blog_home_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_home.tpl",
+					"Modules/Blog/Templates/bb1_blog_latest_posts_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_latest_posts.tpl",
+					"Modules/Blog/Templates/bb1_blog_post.tpl",
+					"Modules/Blog/Templates/bb1_blog_posts_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_posts_list.tpl",
+					"Modules/Blog/Templates/bb1_blog_related_posts_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_related_posts.tpl",
+					"Modules/Blog/Templates/bb1_blog_sidebar.tpl",
+					"Modules/Blog/Templates/bb1_blog_social_media_links.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Blog/Templates/bb1_blog_archive_home.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_by_month.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_by_year.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_category_list.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_form_submitted.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_form.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_container.tpl",
+					"Modules/Blog/Templates/bb1_blog_home_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_home.tpl",
+					"Modules/Blog/Templates/bb1_blog_latest_posts_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_latest_posts.tpl",
+					"Modules/Blog/Templates/bb1_blog_post.tpl",
+					"Modules/Blog/Templates/bb1_blog_posts_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_posts_list.tpl",
+					"Modules/Blog/Templates/bb1_blog_related_posts_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_related_posts.tpl",
+					"Modules/Blog/Templates/bb1_blog_sidebar.tpl",
+					"Modules/Blog/Templates/bb1_blog_social_media_links.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Blog/Templates/bb1_blog_archive_home.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_by_month.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_by_year.tpl",
+					"Modules/Blog/Templates/bb1_blog_archive_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_category_list.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_form_submitted.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_form.tpl",
+					"Modules/Blog/Templates/bb1_blog_comments_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_container.tpl",
+					"Modules/Blog/Templates/bb1_blog_home_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_home.tpl",
+					"Modules/Blog/Templates/bb1_blog_latest_posts_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_latest_posts.tpl",
+					"Modules/Blog/Templates/bb1_blog_post.tpl",
+					"Modules/Blog/Templates/bb1_blog_posts_list_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_posts_list.tpl",
+					"Modules/Blog/Templates/bb1_blog_related_posts_cell.tpl",
+					"Modules/Blog/Templates/bb1_blog_related_posts.tpl",
+					"Modules/Blog/Templates/bb1_blog_sidebar.tpl",
+					"Modules/Blog/Templates/bb1_blog_social_media_links.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Blog/Sass/_bb1-blog.scss"
+		},
+		"files": [
+			"Modules/Blog/Sass/_bb1-blog.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Blog/JavaScript/bb1.Blog.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Blog/JavaScript/bb1.Blog.Archive.ListCell.View.js",
+					"Modules/Blog/JavaScript/bb1.Blog.Collections.js",
+					"Modules/Blog/JavaScript/bb1.Blog.Comments.ListCell.View.js",
+					"Modules/Blog/JavaScript/bb1.Blog.Home.ListCell.View.js",
+					"Modules/Blog/JavaScript/bb1.Blog.js",
+					"Modules/Blog/JavaScript/bb1.Blog.Models.js",
+					"Modules/Blog/JavaScript/bb1.Blog.Posts.ListCell.View.js",
+					"Modules/Blog/JavaScript/bb1.Blog.Router.js",
+					"Modules/Blog/JavaScript/bb1.Blog.Sidebar.View.js",
+					"Modules/Blog/JavaScript/bb1.Blog.SocialMediaLinks.View.js",
+					"Modules/Blog/JavaScript/bb1.Blog.Views.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Blog/SuiteScript/bb1.Blog.js",
+		"files": [
+			"Modules/Blog/SuiteScript/bb1.Blog.js",
+			"Modules/Blog/SuiteScript/bb1.Blog.Comments.Model.js",
+			"Modules/Blog/SuiteScript/bb1.Blog.Posts.Model.js",
+			"Modules/Blog/SuiteScript/bb1.Blog.Settings.Model.js",
+			"Modules/Blog/SuiteScript/BlogComments.ServiceController.js",
+			"Modules/Blog/SuiteScript/BlogPosts.ServiceController.js",
+			"Modules/Blog/SuiteScript/BlogSettings.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/bb1/Blog@1.0.0",
+	"activation_id": "6",
+	"extension_id": "1501"
+}

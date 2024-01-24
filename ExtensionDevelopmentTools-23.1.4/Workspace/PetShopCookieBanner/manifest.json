@@ -1,0 +1,50 @@
+{
+	"name": "PetShopCookieBanner",
+	"fantasyName": "PetShop Cookie Banner",
+	"vendor": "PetShop",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Displays the cookie messaging at a fixed position",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CookieBanner/Sass/_petshop-cookiebanner.scss"
+		},
+		"files": [
+			"Modules/CookieBanner/Sass/_petshop-cookiebanner.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CookieBanner/JavaScript/PetShop.PetShopCookieBanner.CookieBanner.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CookieBanner/JavaScript/PetShop.PetShopCookieBanner.CookieBanner.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PetShop/PetShopCookieBanner@1.0.0",
+	"activation_id": "6",
+	"extension_id": "5803"
+}

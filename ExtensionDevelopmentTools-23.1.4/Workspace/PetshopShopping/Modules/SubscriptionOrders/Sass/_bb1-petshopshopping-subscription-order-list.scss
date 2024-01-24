@@ -1,0 +1,28 @@
+.subscription-orders .product-list-display-full-extras,
+.subscription-orders .product-list-list-details-button-group {
+	white-space: nowrap;
+}
+.subscription-orders .product-list-list-details-button-view ,
+.subscription-orders .product-list-list-details-button-edit {
+	@extend .button-primary;
+	@extend .button-small;
+	border-right: 1px solid #0abd9d;
+	min-width: 84px;
+	margin-top: 15px;
+}
+.subscription-place-order {
+ background: none;
+ color: #0067b9;
+ 
+ &[disabled] {
+  color: #777;
+ }
+ 
+ &:hover {
+  color: #198fec;
+ }
+ 
+ &[disabled]:hover {
+  color: #777;
+ }
+}

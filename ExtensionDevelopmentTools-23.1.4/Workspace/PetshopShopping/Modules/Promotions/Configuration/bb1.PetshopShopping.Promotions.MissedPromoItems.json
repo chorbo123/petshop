@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "missedPromoItemsStep",
+        "group": "promotionsSettings",
+        "title": "Missed Promotion Items Checkout Step",
+        "docRef": "bridgehead_018775937198059830",
+        "description": "Missed Promotion Items Chcekout Step related configuration"
+    },
+    "properties": {
+        "promotions.checkout.missedPromoItemsStep.enabled": {
+            "group": "promotionsSettings",
+            "subtab": "missedPromoItemsStep",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the Missed Promotion Items checkout step should be enabled.",
+            "default": true
+        },
+        "promotions.checkout.missedPromoItemsStep.title": {
+            "group": "promotionsSettings",
+            "subtab": "missedPromoItemsStep",
+            "type": "string",
+            "title": "Page Title",
+            "description": "Enter the title for this checkout step.",
+            "default": "Promotions"
+        },
+        "promotions.checkout.missedPromoItemsStep.urlComponent": {
+            "group": "promotionsSettings",
+            "subtab": "missedPromoItemsStep",
+            "type": "string",
+            "title": "URL Component",
+            "description": "Enter the URL component for this checkout step.",
+            "default": "missed-promotions"
+        },
+        "promotions.checkout.missedPromoItemsStep.heading": {
+            "group": "promotionsSettings",
+            "subtab": "missedPromoItemsStep",
+            "type": "string",
+            "title": "Heading",
+            "description": "Enter the section heading for this checkout step.",
+            "default": "Incomplete offers in your cart"
+        },
+        "promotions.checkout.missedPromoItemsStep.actionButtonLabel": {
+            "group": "promotionsSettings",
+            "subtab": "missedPromoItemsStep",
+            "type": "string",
+            "title": "Action Button Label",
+            "description": "Enter the action button label for each item displayed.",
+            "default": "Add to Cart +"
+        }
+    }
+}

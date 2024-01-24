@@ -1,0 +1,56 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "brandReferrals",
+        "group": "advancedSettings",
+        "title": "Brand Referrals",
+        "docRef": "bridgehead_93849857769911",
+        "description": "Brand Referrals related configuration "
+    },
+    "properties": {
+        "brandReferrals.enabled": {
+            "group": "advancedSettings",
+            "subtab": "brandReferrals",
+            "type": "boolean",
+            "title": "Enable Brand Referrals",
+            "description": "Select if the Brand Referrals should be displayed.",
+            "default": true,
+            "hidden": true
+        }
+    },
+    "brandReferrals.shareCodeMessages": {
+            "group": "layout",
+            "subtab": "brandReferrals",
+            "type": "array",
+            "title": "Share Code Messages",
+            "description": "The share code messages available to brand referrers.",
+            "hidden": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string",
+                        "nsType": "textarea",
+                        "title": "Share Code Message",
+                        "description": "The share code message.",
+                        "mandatory": true
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to hide this message"
+                    }
+                }
+            },
+            "default": [
+            {
+                "message": "Hi $(0), Click the share code link to get a $(1) free bag.",
+                "inactive": false
+            },
+            {
+                "message": "Hi $(0), Click the share code link to get a 10% discount off $(1).",
+                "inactive": false
+            }
+           ]
+        }
+}

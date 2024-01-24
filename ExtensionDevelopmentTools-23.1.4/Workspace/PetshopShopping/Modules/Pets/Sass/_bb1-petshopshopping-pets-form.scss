@@ -1,0 +1,77 @@
+.pet-form {
+	@extend .box-column-bordered
+}
+
+.pet-form-button-back {
+ @extend .button-back;
+}
+
+.pet-form-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.pet-form-required {
+	display: block;
+	margin-top: 20px;
+}
+
+.pet-form-controls-group {
+	/*@extend .control-group;*/
+ margin-top: 20px;
+}
+
+.pet-form-label {
+	/*@extend .input-label;*/
+}
+
+.pet-form-required-star {
+	@extend .input-required;
+}
+
+.pet-form-input, .pet-form-select {
+	@extend .input-large;
+}
+
+input.pet-form-input-age {
+ display: inline-block;
+	width: 100px;
+ min-width: 0;
+}
+
+.pet-form-textarea {
+	/*@extend .input-textarea;*/
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.pet-form-button-submit {
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.pet-form-button {
+	@extend .button-medium;
+}
+
+.pet-form-header{}
+.pet-form-title{}
+.pet-form-alert-placeholder{}
+.pet-form-include-email{}
+
+.pet-form-deceased {
+ margin-top: 30px;
+}
+
+.pet-form-deceased-button {
+ background: none;
+ text-decoration: underline;
+ color: #777777;
+}
+
+.pet-deceased-view {
+ h1,
+ p {
+  margin-bottom: 20px;
+ }
+}

@@ -1,0 +1,189 @@
+/*
+.control-group{
+	margin-top: $sc-medium-margin;
+}
+
+.input-label{
+	display:inline-block;
+	margin-bottom:$sc-base-margin * 2;
+	font-size:$sc-base-font-size;
+	font-weight:$sc-font-weight-semibold;
+	color:$sc-color-dark-copy;
+}
+
+.input-textarea{
+	border:1px solid $sc-color-theme-light;
+	padding:$sc-base-margin * 2;
+	font-size:$sc-base-font-size;
+	min-width:280px;
+	color:$sc-color-dark-copy;
+	width:100%;
+	min-height: 105px;
+	@include appearance(none);
+	@include border-radius(0);
+
+	@media(min-width: $screen-sm-min){
+		width:auto;
+		min-width:300px;
+	}
+}
+
+
+label {
+	display:inline-block;
+	margin-bottom: $sc-margin-lv2;
+	font-size: $sc-font-size-m;
+	color: $sc-color-copy-dark;
+
+	small {
+		font-size: $sc-font-size-s;
+
+		&.required {
+			color: $sc-color-primary;
+		}
+	}
+}
+
+textarea {
+	border:1px solid $sc-color-theme-border;
+	padding: $sc-margin-lv2;
+	font-size: $sc-font-size-m;
+	color: $sc-color-copy-dark;
+	width:100%;
+	min-height: 105px;
+	@include appearance(none);
+	@include border-radius(0);
+
+	@media (min-width: $screen-sm-min){
+		width: auto;
+		min-width: 300px;
+	}
+}
+*/
+
+.prescription-item-form{
+	@extend .global-views-message;
+	@extend .global-views-message-warning;
+	@extend .alert !optional;
+	@extend .fade !optional;
+	@extend .in !optional;
+	padding: 25px;
+ 
+ ul {
+  color: black;
+ }
+}
+
+.prescription-item-form-2{
+ background-color: #f6f6f6;
+ margin-bottom: 25px;
+	padding: 15px;
+ border-radius: 15px;
+ 
+ ul {
+  list-style-type: disc;
+  margin: 15px 0;
+  padding-left: 20px;
+ }
+ 
+ li {
+  list-style-type: disc;
+ }
+ 
+ .prescription-item-form-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $sc-color-copy-dark;
+ }
+ 
+ .prescription-item-form-subheading,
+ .prescription-item-form-label {
+  color: #4757a7;
+  font-size: 1.2rem;
+  font-weight: bold;
+ }
+ 
+ .prescription-item-form-subheading {
+  margin-top: 20px;
+ }
+}
+
+.prescription-item-form-treatmentstartdate {
+ display: none;
+ margin-top: 0 !important;
+}
+
+.prescription-item-form-success{
+	@extend .global-views-message;
+	@extend .global-views-message-success;
+	@extend .alert !optional;
+	@extend .fade !optional;
+	@extend .in !optional;
+}
+
+.prescription-item-form-heading {
+ color: $sc-color-warning;
+	font-weight: normal;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+	color: #034285;
+	line-height: 1.2em;
+}
+
+.prescription-item-form-button-back{
+    @extend .button-back;
+}
+
+.prescription-item-form-button-back-icon{
+	@extend .button-back-icon;
+}
+
+.prescription-item-form-required {
+	display:block;
+	margin-top: 20px;
+}
+
+.prescription-item-form-controls-group{
+	/*@extend .control-group;*/
+ margin-top: 20px;
+}
+
+.prescription-item-form-label{
+	/*@extend .input-label;*/
+	color: $sc-color-warning;
+}
+
+.prescription-item-form-required-star {
+	@extend .input-required;
+}
+
+.prescription-item-form-input, .prescription-item-form-select{
+	@extend .input-large;
+}
+
+.prescription-item-form-input-xs {
+ @extend .input-xsmall !optional;
+	display: inline-block;
+	width: 60px;
+}
+
+.prescription-item-form-textarea{
+	/*@extend .input-textarea;*/
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.prescription-item-form-button-submit{
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.prescription-item-form-button {
+	@extend .button-medium;
+}
+
+.prescription-item-form-header{}
+.prescription-item-form-title{}
+.prescription-item-form-alert-placeholder{}
+.prescription-item-form-include-email{}

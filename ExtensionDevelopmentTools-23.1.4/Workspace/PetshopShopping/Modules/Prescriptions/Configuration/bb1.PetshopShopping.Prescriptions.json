@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "prescriptionItemsStep",
+        "group": "promotionsSettings",
+        "title": "Prescription Items Checkout Step",
+        "docRef": "bridgehead_9787749939300309202000",
+        "description": "Prescription Items Checkout Step related configuration"
+    },
+    "properties": {
+        "promotions.checkout.prescriptionItemsStep.enabled": {
+            "group": "promotionsSettings",
+            "subtab": "prescriptionItemsStep",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the Prescription Items checkout step should be enabled.",
+            "default": true
+        },
+        "promotions.checkout.prescriptionItemsStep.title": {
+            "group": "promotionsSettings",
+            "subtab": "prescriptionItemsStep",
+            "type": "string",
+            "title": "Page Title",
+            "description": "Enter the title for this checkout step.",
+            "default": "Prescriptions"
+        },
+        "promotions.checkout.prescriptionItemsStep.urlComponent": {
+            "group": "promotionsSettings",
+            "subtab": "prescriptionItemsStep",
+            "type": "string",
+            "title": "URL Component",
+            "description": "Enter the URL component for this checkout step.",
+            "default": "prescriptions"
+        },
+        "promotions.checkout.prescriptionItemsStep.heading": {
+            "group": "promotionsSettings",
+            "subtab": "prescriptionItemsStep",
+            "type": "string",
+            "title": "Heading",
+            "description": "Enter the section heading for this checkout step.",
+            "default": "Add Your Pet"
+        }
+    }
+}

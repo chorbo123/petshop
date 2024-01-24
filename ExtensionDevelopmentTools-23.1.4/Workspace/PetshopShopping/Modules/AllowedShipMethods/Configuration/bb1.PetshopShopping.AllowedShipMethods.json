@@ -1,0 +1,75 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "allowedShipMethods",
+        "group": "advancedSettings",
+        "title": "Allowed Shipping Methods",
+        "docRef": "bridgehead_3895083459845",
+        "description": "Settings for the shipping methods which are allowed on the checkout"
+    },
+    "properties": {
+        "warehouseLocationId": {
+            "group": "advancedSettings",
+            "subtab": "allowedShipMethods",
+            "type": "string",
+            "title": "Warehouse Location Internal ID",
+            "description": "The internal ID of the warehouse location used on this site.",
+            "mandatory": true,
+            "default": "6"
+        },
+        "saturdayShipMethodId": {
+            "group": "advancedSettings",
+            "subtab": "allowedShipMethods",
+            "type": "string",
+            "title": "Saturday Shipping Method Internal ID",
+            "description": "The internal ID of the Saturday shipping method used on this site.",
+            "mandatory": true,
+            "default": "41179"
+        },
+        "allowedShipMethods": {
+            "group": "advancedSettings",
+            "subtab": "allowedShipMethods",
+            "type": "array",
+            "title": "Allowed Shipping Methods",
+            "description": "Only shipping methods with an internal ID included in this list are allowed on the web site checkout",
+            "items": {
+                "type": "string",
+                "title": "Shipping Methods Internal ID"
+            },
+            "default": ["41837","41556","41557","41558","41559","41560","41561","41563","41564","41565","41566","41567","41569","41570","41571","41572","41573","41574","41575","41576","41577","41578","41579","41580","41581","41582","41584","11252","3","11250","43564","42000","11251","11253","4","2","41179","42746","11249","43526","45410","43521","46069","46077","46071","45413","42010","41803"]
+        },
+        "shipMethodWeightLimits": {
+            "group": "advancedSettings",
+            "subtab": "allowedShipMethods",
+            "type": "array",
+            "title": "Shipping Methods Weight Limits",
+            "description": "Only shipping methods with an internal ID included in this list are allowed on the web site checkout",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Shipping Methods Display Name",
+                        "description": "The display name of the shipping method"
+                    },
+                    "internalId": {
+                        "type": "integer",
+                        "title": "Shipping Methods Internal ID",
+                        "description": "The internal ID of the shipping method",
+                        "mandatory": true
+                    },
+                    "minWeight": {
+                        "type": "number",
+                        "title": "Min. Weight (kg)",
+                        "description": "The minimum weight in kg"
+                    },
+                    "maxWeight": {
+                        "type": "number",
+                        "title": "Max. Weight (kg)",
+                        "description": "The maximum weight in kg"
+                    }
+                }
+            }
+        }
+    }
+}

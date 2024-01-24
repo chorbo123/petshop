@@ -1,0 +1,28 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "facebookInsights",
+        "group": "integrations",
+        "title": "Facebook Insights",
+        "docRef": "bridgehead_993772389983",
+        "description": "Facebook Insights related configuration "
+    },
+    "properties": {
+        "tracking.facebookInsights.enabled": {
+            "group": "integrations",
+            "subtab": "facebookInsights",
+            "type": "boolean",
+            "title": "Enable Facebook Insights",
+            "description": "Select if the Facebook Insights application should be enabled.",
+            "default": true
+        },
+        "tracking.facebookInsights.applicationId": {
+            "group": "integrations",
+            "subtab": "facebookInsights",
+            "type": "string",
+            "title": "Facebook Insights Application ID",
+            "description": "Enter the Facebook Insights API Key.",
+            "default": "899121023455215"
+        }
+    }
+}

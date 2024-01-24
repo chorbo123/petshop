@@ -1,0 +1,86 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "treatmentItemsStep",
+        "group": "promotionsSettings",
+        "title": "Treatment Items Checkout Step",
+        "docRef": "bridgehead_109267398098349349",
+        "description": "Treatment Items Chcekout Step related configuration"
+    },
+    "properties": {
+        "promotions.checkout.treatmentItemsStep.enabled": {
+            "group": "promotionsSettings",
+            "subtab": "treatmentItemsStep",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the Treatment Items checkout step should be enabled.",
+            "default": true
+        },
+        "promotions.checkout.treatmentItemsStep.title": {
+            "group": "promotionsSettings",
+            "subtab": "treatmentItemsStep",
+            "type": "string",
+            "title": "Page Title",
+            "description": "Enter the page title for this checkout step.",
+            "default": "Flea & Wormers"
+        },
+        "promotions.checkout.treatmentItemsStep.urlComponent": {
+            "group": "promotionsSettings",
+            "subtab": "treatmentItemsStep",
+            "type": "string",
+            "title": "URL Component",
+            "description": "Enter the URL component for this checkout step.",
+            "default": "flea-wormers"
+        },
+        "promotions.checkout.treatmentItemsStep.heading": {
+            "group": "promotionsSettings",
+            "subtab": "treatmentItemsStep",
+            "type": "string",
+            "title": "Heading",
+            "description": "Enter the section heading for this checkout step.",
+            "default": "Add Flea and Wormer"
+        },
+        "promotions.checkout.treatmentItemsStep.actionButtonLabel": {
+            "group": "promotionsSettings",
+            "subtab": "treatmentItemsStep",
+            "type": "string",
+            "title": "Action Button Label",
+            "description": "Enter the action button label for each item displayed.",
+            "default": "Add to Cart +"
+        },
+        "promotions.checkout.treatmentItemsStep.treatmentCategories": {
+            "group": "promotionsSettings",
+            "subtab": "treatmentItemsStep",
+            "type": "array",
+            "title": "Flea & Worming Treatment Categories",
+            "description": "Commerce category URLs used to determine whether an item is a flea or worming treatment.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "treatmentType": {
+                        "type": "string",
+                        "title": "Treatment",
+                        "description": "The type of treatment this Category URL applies to.",
+                        "mandatory": true,
+                        "enum": [
+                            "Flea",
+                            "Worming"
+                        ]
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Category URL",
+                        "description": "The URL of the commerce category of the item in the user's cart.",
+                        "mandatory": true
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to not display this treatment item list"
+                    }
+                }
+            },
+            "default": []
+        }
+    }
+}

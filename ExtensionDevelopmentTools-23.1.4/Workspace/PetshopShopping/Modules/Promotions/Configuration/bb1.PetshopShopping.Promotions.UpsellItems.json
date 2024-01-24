@@ -1,0 +1,102 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "upsellItemsStep",
+        "group": "promotionsSettings",
+        "title": "Upsell Items Checkout Step",
+        "docRef": "bridgehead_8724795766522729",
+        "description": "Upsell Items Chcekout Step related configuration"
+    },
+    "properties": {
+        "promotions.checkout.upsellItemsStep.enabled": {
+            "group": "promotionsSettings",
+            "subtab": "upsellItemsStep",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the Upsell Items checkout step should be enabled.",
+            "default": true
+        },
+        "promotions.checkout.upsellItemsStep.title": {
+            "group": "promotionsSettings",
+            "subtab": "upsellItemsStep",
+            "type": "string",
+            "title": "Page Title",
+            "description": "Enter the page title for this checkout step.",
+            "default": "Add-ons"
+        },
+        "promotions.checkout.upsellItemsStep.urlComponent": {
+            "group": "promotionsSettings",
+            "subtab": "upsellItemsStep",
+            "type": "string",
+            "title": "URL Component",
+            "description": "Enter the URL component for this checkout step.",
+            "default": "before-you-go"
+        },
+        "promotions.checkout.upsellItemsStep.heading": {
+            "group": "promotionsSettings",
+            "subtab": "upsellItemsStep",
+            "type": "string",
+            "title": "Heading",
+            "description": "Enter the section heading for this checkout step.",
+            "default": "Before you go..."
+        },
+        "promotions.checkout.upsellItemsStep.maxItemListsDisplayed": {
+            "group": "promotionsSettings",
+            "subtab": "upsellItemsStep",
+            "type": "number",
+            "title": "Max. Item Lists Displayed",
+            "description": "Enter the maximum number of category item lists that are displayed.",
+            "default": "4"
+        },
+        "promotions.checkout.upsellItemsStep.actionButtonLabel": {
+            "group": "promotionsSettings",
+            "subtab": "upsellItemsStep",
+            "type": "string",
+            "title": "Action Button Label",
+            "description": "Enter the action button label for each item displayed.",
+            "default": "Add to Cart +"
+        },
+        "promotions.checkout.upsellItemsStep.relatedCategories": {
+            "group": "promotionsSettings",
+            "subtab": "upsellItemsStep",
+            "type": "array",
+            "title": "Related Categories",
+            "description": "Commerce category URLs and their related commerce category URLs and priorities",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "title": "Title",
+                        "description": "The title to display for this upsell items list.",
+                        "mandatory": true
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Category URL",
+                        "description": "The URL of the commerce category of the item in the user's cart.",
+                        "mandatory": true
+                    },
+                    "relatedUrl": {
+                        "type": "string",
+                        "title": "Related Category URL",
+                        "description": "The URL of the commerce category to search for additional upsell items for based on the category of the items in the user's cart.",
+                        "mandatory": true
+                    },
+                    "priority": {
+                        "type": "number",
+                        "title": "Priority",
+                        "description": "The priority ranking for this upsell items list. Only the four top ranked upsell item list will be displayed (Lower number = Higher rank)",
+                        "mandatory": true
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to not display this upsell item list"
+                    }
+                }
+            },
+            "default": []
+        }
+    }
+}

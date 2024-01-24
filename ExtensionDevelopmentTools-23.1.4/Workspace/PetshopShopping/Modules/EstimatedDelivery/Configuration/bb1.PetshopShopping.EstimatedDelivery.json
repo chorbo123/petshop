@@ -1,0 +1,366 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "estimatedDelivery",
+        "group": "checkoutApp",
+        "title": "Estimated Delivery",
+        "docRef": "bridgehead_39849384900875993",
+        "description": "Estimated Delivery related configuration"
+    },
+    "properties": {
+        "estimatedDelivery.enabled": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the checkout estimated delivery should be enabled.",
+            "default": true
+        },
+        "estimatedDelivery.preferredSupplierEnabled": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "boolean",
+            "title": "Enable Preferred Supplier Inventory",
+            "description": "Select if the checkout estimated delivery preferred supplier inventory should be included in express delivery estimates.",
+            "default": true
+        },
+        "estimatedDelivery.poExpectedDateEnabled": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "boolean",
+            "title": "Enable Expected Date for PO",
+            "description": "Select if the checkout estimated delivery PO expected date should be included in express delivery estimates.",
+            "default": true
+        },
+        "estimatedDelivery.estimatedDaysForStandardDelivery": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "integer",
+            "title": "Estimated Days For Standard Delivery",
+            "description": "Enter the estimated days taken for standard delivery.",
+            "mandatory": true,
+            "default": 4
+        },
+        "estimatedDelivery.deliveryCutoffTime": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "integer",
+            "enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+            "title": "Delivery Cut-off Time",
+            "description": "Select the hour of the day for the delivery cut-off time.",
+            "mandatory": true,
+            "default": 15
+        },
+        "estimatedDelivery.warehouseMinStockLevel": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "integer",
+            "title": "Warehouse Minimum Stock Level",
+            "description": "Enter the minimum local warehouse inventory level allowed for items to be included in express delivery.",
+            "mandatory": true,
+            "default": 10
+        },
+        "estimatedDelivery.supplierWarehouseMinStockLevel": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "integer",
+            "title": "Supplier Minimum Stock Level",
+            "description": "Enter the minimum supplier warehouse inventory level allowed for items to be included in express delivery.",
+            "mandatory": true,
+            "default": 10
+        },
+        "estimatedDelivery.allCartItemsHaveSameExpressDeliveryDateMessage": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "All Cart Have Same Express Delivery Date Message",
+            "description": "Enter the message to display above the user's shopping cart if all the items in their cart have the same express delivery date and all are in stock.",
+            "default": "<p>We love our environment ☺ To help reduce our carbon footprint, all items for your order are shipped together.</p><p>With our free standard delivery your order will arrive in 3-5 days. If you would like to receive $(0) upgrade for £1.99 at checkout.</p>"
+        },
+        "estimatedDelivery.cartItemsHaveDifferentExpressDeliveryDateMessage": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Cart Have Different Express Delivery Date Message",
+            "description": "Enter the message to display above the user's shopping cart if the items in their cart have different express delivery dates and all are in stock.",
+            "default": "<p>We love our environment ☺ To help reduce our carbon footprint, all items for your order are shipped together.</p><p>With our free standard delivery your order will arrive in 3-5 days. If you would like to receive $(0) upgrade for £1.99 at checkout & remove non eligible items from cart below.</p>"
+        },
+        "estimatedDelivery.someCartItemsOutOfStockMessage": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Some Cart Items Out Of Stock Message",
+            "description": "Enter the message to display above the user's shopping cart if some the items in their cart are out of stock.",
+            "default": "<p>We love our environment ☺ To help reduce our Carbon footprint, all items for your order are shipped together.</p><p>Your order will be sent out as soon as your “Just sold out” product is back in stock. If you would like to receive $(0) upgrade for £1.99 at checkout & remove non eligible items from cart below.</p>"
+        },
+        "estimatedDelivery.allCartItemsOutOfStockMessage": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "All Cart Items Out Of Stock Message",
+            "description": "Enter the message to display above the user's shopping cart if all the items in their cart are out of stock.",
+            "default": "<p>We love our environment ☺ To help reduce our Carbon footprint, all items for your order are shipped together.</p><p>Your order will be sent out once your products are back in stock.</p>"
+        },
+        "estimatedDelivery.shippingMethods": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "array",
+            "title": "Shipping Methods",
+            "description": "Estimated delivery settings for listed Shipping Methods",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "internalid": {
+                        "type": "integer",
+                        "title": "Internal ID",
+                        "description": "The Netsuite Internal ID of the Shipping Method.",
+                        "mandatory": true
+                    },
+                    "title": {
+                        "type": "string",
+                        "title": "Title",
+                        "description": "The title of the shipping method for admin reference only."
+                    },
+                    "estimatedDeliveryInDays": {
+                        "type": "integer",
+                        "title": "Estimated Delivery",
+                        "description": "The estimated number of days required for delivery.",
+                        "mandatory": true
+                    },
+                    "inventoryLocation": {
+                        "type": "string",
+                        "title": "Inventory Location",
+                        "enum": ["No Stock Required", "Local Warehouse", "Preferred Supplier Warehouse"],
+                        "description": "Select which inventory location all cart items must be fulfilled from.",
+                        "mandatory": true
+                    },
+                    "saturdayShipping": {
+                        "type": "boolean",
+                        "title": "Saturday Shipping",
+                        "description": "Tick this option to allow Saturday shipping for this shipping method."
+                    },
+                    "priority": {
+                        "type": "number",
+                        "title": "Priority",
+                        "description": "The priority ranking used to order this shipping method in the list of available options. (Lower number = Higher rank)",
+                        "mandatory": true,
+                        "default": 0
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to set the line inactive."
+                    }
+                }
+            },
+            "default": [
+                {
+                    "internalid": 11250,
+                    "title": "Hermes 1Day",
+                    "estimatedDeliveryInDays": 4,
+                    "inventoryLocation": "No Stock Required"
+                },
+                {
+                    "internalid": 42000,
+                    "title": "Royal Mail",
+                    "estimatedDeliveryInDays": 4,
+                    "inventoryLocation": "No Stock Required"
+                },
+                {
+                    "internalid": 2,
+                    "title": "Yodel (HDN / ISLE / NIS )",
+                    "estimatedDeliveryInDays": 4,
+                    "inventoryLocation": "No Stock Required"
+                },
+                {
+                    "internalid": 11252,
+                    "title": "DPD 3 - 5 Working Days",
+                    "estimatedDeliveryInDays": 4,
+                    "inventoryLocation": "No Stock Required"
+                },
+                {
+                    "internalid": 11249,
+                    "title": "Yodel 24hrs",
+                    "estimatedDeliveryInDays": 1,
+                    "inventoryLocation": "Local Warehouse"
+                },
+                {
+                    "internalid": 43564,
+                    "title": "Hermes Express",
+                    "estimatedDeliveryInDays": 1,
+                    "inventoryLocation": "Local Warehouse"
+                },
+                {
+                    "internalid": 41931,
+                    "title": "DPD Express",
+                    "estimatedDeliveryInDays": 1,
+                    "inventoryLocation": "Local Warehouse"
+                },
+                {
+                    "internalid": 11249,
+                    "title": "Yodel 24hrs",
+                    "estimatedDeliveryInDays": 2,
+                    "inventoryLocation": "Preferred Supplier Warehouse"
+                },
+                {
+                    "internalid": 43564,
+                    "title": "Hermes Express",
+                    "estimatedDeliveryInDays": 2,
+                    "inventoryLocation": "Preferred Supplier Warehouse"
+                },
+                {
+                    "internalid": 41931,
+                    "title": "DPD Express",
+                    "estimatedDeliveryInDays": 2,
+                    "inventoryLocation": "Preferred Supplier Warehouse"
+                },
+                {
+                    "internalid": 46071,
+                    "title": "Yodel (Express ECO)",
+                    "estimatedDeliveryInDays": 7,
+                    "inventoryLocation": "Preferred Supplier Warehouse"
+                },
+                {
+                    "internalid": 46069,
+                    "title": "Yodel (Express ISLE)",
+                    "estimatedDeliveryInDays": 7,
+                    "inventoryLocation": "Preferred Supplier Warehouse"
+                },
+                {
+                    "internalid": 46077,
+                    "title": "Yodel (Express NIS)",
+                    "estimatedDeliveryInDays": 6,
+                    "inventoryLocation": "Preferred Supplier Warehouse"
+                },
+                {
+                    "internalid": 42746,
+                    "title": "Yodel - Channel Islands",
+                    "estimatedDeliveryInDays": 7,
+                    "inventoryLocation": "Preferred Supplier Warehouse"
+                },
+                {
+                    "internalid": 46105,
+                    "title": "Yodel - Channel Islands (under £19.99)",
+                    "estimatedDeliveryInDays": 7,
+                    "inventoryLocation": "Preferred Supplier Warehouse"
+                },
+                {
+                    "internalid": 41179,
+                    "title": "Yodel (HDN / ISLE / NIS ) SAT",
+                    "estimatedDeliveryInDays": 1,
+                    "inventoryLocation": "Preferred Supplier Warehouse",
+                    "saturdayShipping": true
+                }
+            ]
+        },
+        "estimatedDelivery.suppliers": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "array",
+            "title": "Suppliers",
+            "description": "Estimated delivery settings for listed Suppliers",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "internalid": {
+                        "type": "integer",
+                        "title": "Internal ID",
+                        "description": "The Netsuite Internal ID of the Supplier.",
+                        "mandatory": true
+                    },
+                    "title": {
+                        "type": "string",
+                        "title": "Supplier Name",
+                        "description": "The supplier's name for admin reference only."
+                    },
+                    "deliveryCutoffTime": {
+                        "type": "integer",
+                        "enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+                        "title": "Delivery Cut-off Time",
+                        "description": "Select the hour of the day for the delivery cut-off time.",
+                        "mandatory": true,
+                        "default": 15
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to set the line inactive."
+                    }
+                }
+            },
+            "default": [
+                {
+                    "internalid": 230,
+                    "title": "Best Pets",
+                    "deliveryCutoffTime": 15
+                },
+                {
+                    "internalid": 3516354,
+                    "title": "Trilanco",
+                    "deliveryCutoffTime": 15
+                },
+                {
+                    "internalid": 515,
+                    "title": "Vital Pets",
+                    "deliveryCutoffTime": 15
+                },
+                {
+                    "internalid": 388,
+                    "title": "NVS",
+                    "deliveryCutoffTime": 15
+                },
+                {
+                    "internalid": 464,
+                    "title": "NVS",
+                    "deliveryCutoffTime": 15
+                },
+                {
+                    "internalid": 503,
+                    "title": "Trust Pets",
+                    "deliveryCutoffTime": 15
+                }
+            ]
+        },
+        "estimatedDelivery.holidays": {
+            "group": "checkoutApp",
+            "subtab": "estimatedDelivery",
+            "type": "array",
+            "title": "Holidays",
+            "description": "Dates regarded as non-working days for the estimated delivery.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "string",
+                        "title": "Date (dd/MM/YYYY)",
+                        "description": "The date of the holiday (dd/MM/YYYY).",
+                        "mandatory": true
+                    },
+                    "title": {
+                        "type": "string",
+                        "title": "Holiday Name",
+                        "description": "The holiday name for admin reference only."
+                    }
+                }
+            },
+            "default": [
+                {
+                    "date": "25/12/2020",
+                    "title": "Christmas Day"
+                },
+                {
+                    "date": "28/12/2020",
+                    "title": "Boxing Day"
+                },
+                {
+                    "date": "1/1/2021",
+                    "title": "New Year's Day"
+                }
+            ]
+        }
+    }
+}

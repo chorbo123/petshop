@@ -1,0 +1,21 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "websiteAccess",
+        "group": "advancedSettings",
+        "title": "Website Access",
+        "docRef": "bridgehead_934773499759",
+        "description": "Settings for customer web site access"
+    },
+    "properties": {
+        "websiteAccess.internalId": {
+            "group": "advancedSettings",
+            "subtab": "websiteAccess",
+            "type": "string",
+            "title": "Website Access ID",
+            "description": "Only customer records with 'Web Site Access' set to this internal ID can login to the web site",
+            "mandatory": true,
+            "default": "1"
+        }
+    }
+}

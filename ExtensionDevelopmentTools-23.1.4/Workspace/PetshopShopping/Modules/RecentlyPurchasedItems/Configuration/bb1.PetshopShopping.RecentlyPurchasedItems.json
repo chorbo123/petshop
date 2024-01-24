@@ -1,0 +1,23 @@
+{
+	"type": "object",
+
+    "subtab": {
+        "id": "recentlypurchaseditems",
+        "group": "catalog",
+        "title": "Recently Purchased Items",
+        "docRef": "bridgehead_4667037511",
+        "description": "Recently Purchased Items"
+    },
+    
+    "properties": {
+        "recentlyPurchasedItems.numberOfItemsDisplayed": {
+            "group": "catalog",
+            "subtab": "recentlypurchaseditems",
+            "type": "string",
+            "title": "Number of displayed items",
+            "description": "Enter the number of recently purchased items to display in the browser.",
+            "default": "8"
+        }
+    }
+
+}

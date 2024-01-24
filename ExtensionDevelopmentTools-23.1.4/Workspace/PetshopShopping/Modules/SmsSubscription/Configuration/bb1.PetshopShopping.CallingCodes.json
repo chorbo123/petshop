@@ -1,0 +1,62 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "countryCallingCodes",
+        "title": "Country Calling Codes",
+        "description": "List of country calling codes",
+        "docRef": "bridgehead_3476729910",
+        "group": "layout"
+    },
+    "properties": {
+        "countryCallingCodes.callingCodes": {
+            "group": "layout",
+            "subtab": "countryCallingCodes",
+            "type": "array",
+            "title": "Calling codes",
+            "description": "List of country calling codes",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "callingCode": {
+                        "type": "string",
+                        "title": "Calling Code",
+                        "description": "Example: +44 for United Kingdom"
+                    },
+                    "country": {
+                        "type": "string",
+                        "title": "Country",
+                        "description": "Name of the country associated with the calling code"
+                    },
+                    "thumbnailUrl": {
+                        "type": "string",
+                        "title": "Thumbnail URL",
+                        "description": "The URL of the country flag thumbnail associated with the calling code"
+                    },
+                    "default": {
+                        "type": "boolean",
+                        "title": "Default calling code",
+                        "description": "The calling code selected by default"
+                    }
+                }
+            },
+            "default": [
+                {
+                    "callingCode": "+44",
+                    "country": "United Kingdom",
+                    "thumbnailUrl": "img/mobile-flag-icon-united-kingdom.png",
+                    "default": true
+                },
+                {
+                    "callingCode": "+64",
+                    "country": "Australia",
+                    "thumbnailUrl": "img/mobile-flag-icon-united-kingdom.png"
+                },
+                {
+                    "callingCode": "+1",
+                    "country": "United States",
+                    "thumbnailUrl": "img/mobile-flag-icon-united-states.png"
+                }
+            ]
+        }
+    }
+}
