@@ -1,0 +1,90 @@
+// Best Sellers
+.best-sellers-container {
+	display: block;
+	h1 {
+	  text-align: center;
+	  margin: 0 auto 20px;
+	}
+  
+	.petshop-bestsellers {
+		position: relative;
+		width: 100%;
+  
+		.pbs-flex {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: stretch;
+			margin: 0 -5px;
+		  }
+		.pbs-item-wrap {
+			width: calc(100% / 3);
+			padding: 0 3px;
+			margin: 0 auto 6px;
+			.pbs-item {
+				display: block;
+				position: relative;
+				background: #ececec;
+				border-radius: 15px;
+				overflow: hidden;
+				height: 100%;
+			}
+			.pbs-img-wrap {
+				position: relative;
+				padding: 20px 10px 70px;
+				.pbs-img {
+					position: relative;
+					text-align: center;
+					min-height: 100px;
+					img {
+						width: auto;
+						height: 100%;
+						max-height: 95px;
+						mix-blend-mode: multiply;
+					}
+				}
+				p {
+					color: #47589f;
+					font-size: 1rem;
+					font-weight: 600;
+					line-height: 1.3;
+				}
+			}
+		}
+		.pbs-tag {
+			background: #e52940;
+			text-align: center;
+			padding: 10px;
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			min-height: 60px;
+			max-height: 60px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+  
+			span {
+			  color: #fff;
+			  font-size: 0.9rem;
+			  line-height: 1.2;
+			  display: block;
+			  font-weight: 600;
+			  overflow: auto;
+			}
+		}
+	  
+		.pbs-btn {
+			font-weight: 700;
+			text-decoration: underline;
+			text-align: center;
+			display: block;
+			margin: 20px auto 0;
+			font-size: 1.2rem;
+		}
+	}
+	@media (min-width: $screen-sm-min){
+	  display: none;
+	}
+  }

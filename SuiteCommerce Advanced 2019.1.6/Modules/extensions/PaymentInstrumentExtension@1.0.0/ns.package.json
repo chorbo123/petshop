@@ -1,0 +1,10 @@
+{
+    "gulp": {
+        "ssp-libraries": [
+            "SuiteScript/*.js"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/PaymentInstrument@sc-2019.1.6/SuiteScript/PaymentInstrument.Model.js": "SuiteScript/PaymentInstrument.Model.js"
+    }
+}

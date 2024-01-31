@@ -1,0 +1,191 @@
+.google-customer-review-slider-container {
+ @extend .container;
+ position: relative;
+ 
+ .item-relations-related-carousel-prev,
+ .item-relations-related-carousel-next {
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: #ccc;
+  
+  i {
+   font-size: 40px;
+  }
+ }
+ 
+ .item-relations-related-carousel-prev {
+  left: -40px;
+ }
+ 
+ .item-relations-related-carousel-next {
+  right: -40px;
+ }
+}
+.google-customer-review-slider {
+ position: relative;
+}
+.google-customer-review {
+ width: 347px;
+ margin-right: 40px;
+ margin: 20px 0 40px;
+}
+.google-customer-review-feedback {
+ position: relative;
+ margin: 2px;
+ color: #777;
+ font-size: 18px;
+ border: 1px solid #ededed;
+ background-color: #fafafa;
+ border-radius: 4px;
+}
+.google-customer-review-feedback:before {
+ position: absolute;
+ bottom: -7px;
+ left: 35px;
+ display: block;
+ width: 14px;
+ height: 14px;
+ border: 1px solid #ededed;
+ border-top: none;
+ border-left: none;
+ background-color: #fafafa;
+ content: "";
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+.google-customer-review-content {
+ position: static;
+ height: 150px;
+ overflow-y: auto;
+ font-size: 14px;
+ text-align: left;
+ padding: 0 2px 0 0;
+ margin: 20px 20px 20px 40px;
+}
+.google-customer-review-content::-webkit-scrollbar {
+ width: 4px;
+}
+.google-customer-review-content::-webkit-scrollbar-track {
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+ -webkit-border-radius: 4px;
+ border-radius: 4px;
+}
+.google-customer-review-content::-webkit-scrollbar-thumb {
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ background: #ccc;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+}
+.google-customer-review-content::-webkit-scrollbar-thumb:window-inactive {
+ background: #ccc;
+}
+.google-customer-review-content:before {
+ bottom: 47px;
+ box-sizing: border-box;
+ color: #bbb;
+ content: '\201C';
+ display: block;
+ height: 96px;
+ left: 50px;
+ position: absolute;
+ right: 515.391px;
+ text-size-adjust: 100%;
+ top: 20px;
+ width: 24.6094px;
+ column-rule-color: #bbb;
+ perspective-origin: 12.2969px 48px;
+ transform-origin: 12.2969px 48px;
+ border: 0 none #bbb;
+ font: normal normal normal normal 60px/96px Georgia,serif;
+ margin: -25px 0 0 -40px;
+ outline: #bbb none 0;
+}
+.google-customer-review-content > svg {
+ position: absolute;
+ bottom: 8px;
+ right: 8px;
+ width: 24px;
+ height: 24px;
+ background: #fff;
+ padding: 2px;
+ border-radius: 50%;
+}
+.google-customer-review-text {
+ color: #777;
+ line-height: 22px;
+}
+.google-customer-review-stars {
+ display: inline-block;
+ margin-right: 4px;
+}
+.google-customer-review-star {
+ padding: 0 4px 0 0;
+ line-height: 22px;
+}
+.google-customer-review-star svg {
+ width: 18px;
+ height: 18px;
+ vertical-align: middle;
+}
+.google-customer-review-caption {
+ display: flex;
+ position: relative;
+ padding: 20px;
+}
+.google-customer-review-caption img {
+ width: 50px;
+ height: 50px;
+ padding: 0;
+ margin: 0 !important;
+ border-radius: 100%;
+ box-shadow: 0 0 1px #a9a9a9;
+ vertical-align: middle;
+ box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+}
+.google-customer-review-details {
+ margin: 0 0 0 10px;
+ text-align: left;
+ vertical-align: middle;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+.google-customer-review-user {
+ display: block;
+ margin-bottom: 3px;
+ font-size: 100%;
+ font-weight: 700;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ color: #427fed;
+ text-decoration: none;
+ box-shadow: none;
+}
+.google-customer-review-time {
+ display: block;
+ color: #999;
+ font-size: 13px;
+ line-height: 14px;
+}
+.grw-slider .wp-more {
+ display: none;
+}
+.grw-slider .wp-more-toggle {
+ color: #136aaf;
+ cursor: pointer;
+ text-decoration: underline;
+}
+@media(max-width: 480px) {
+ .wp-google-badge.wp-google-badge-fixed.wp-google-badge-hide {
+  display: none;
+ }
+}
+
+@media(max-width: 480px){
+ .wp-google-badge.wp-google-badge_left-fixed.wp-google-badge-hide {
+  display: none;
+ }
+}

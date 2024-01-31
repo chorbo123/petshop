@@ -1,0 +1,10 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/LoginRegister@sc-2019.1.6/JavaScript/LoginRegister.Login.View.js": "JavaScript/LoginRegister.Login.View.js"
+    }
+}

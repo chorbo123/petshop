@@ -1,0 +1,46 @@
+{
+	"name": "EmailDetection",
+	"fantasyName": "Registration Duplicate Detection",
+	"vendor": "PetShop",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "detects if an existing email has already been used when registering an account",
+	"assets": {
+		"files": [
+			"assets/services/EmailDetection.Service.ss",
+			"assets/backend/petshop_email_duplicate_suitelet.js"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/EmailDetection/JavaScript/PetShop.EmailDetection.EmailDetection.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/EmailDetection/JavaScript/PetShop.EmailDetection.EmailDetection.js",
+					"Modules/EmailDetection/JavaScript/EmailDetection.View.js",
+					"Modules/EmailDetection/JavaScript/PetShop.EmailDetection.EmailDetection.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/EmailDetection/SuiteScript/PetShop.EmailDetection.EmailDetection.js",
+		"files": [
+			"Modules/EmailDetection/SuiteScript/PetShop.EmailDetection.EmailDetection.js",
+			"Modules/EmailDetection/SuiteScript/EmailDetection.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PetShop/EmailDetection@1.0.0",
+	"activation_id": "4",
+	"extension_id": "6703"
+}

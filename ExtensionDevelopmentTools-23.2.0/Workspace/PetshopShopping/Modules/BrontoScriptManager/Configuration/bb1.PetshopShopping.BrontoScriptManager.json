@@ -1,0 +1,28 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "brontoScriptManager",
+        "group": "integrations",
+        "title": "Bronto Script Manager",
+        "docRef": "bridgehead_8289723867823782",
+        "description": "Bronto Script Manager related configuration "
+    },
+    "properties": {
+        "tracking.brontoScriptManager.enabled": {
+            "group": "integrations",
+            "subtab": "brontoScriptManager",
+            "type": "boolean",
+            "title": "Enable Bronto Script Manager",
+            "description": "Select if the Bronto Script Manager application should be enabled.",
+            "default": true
+        },
+        "tracking.brontoScriptManager.siteId": {
+            "group": "integrations",
+            "subtab": "brontoScriptManager",
+            "type": "string",
+            "title": "Bronto Script Manager Application ID",
+            "description": "Enter the Bronto Script Manager Site ID.",
+            "default": "eyJ0eXBlIjoic2l0ZWhhc2giLCJpZCI6ImYxN2YxNzBlYTE1NWNhODY0ZWRmMzQ4MDM1ZWE1ZWMxYjk2MTQxMGNhNjA5YTg4YmI1NWUyYTE4M2E5ZDEyNjIifQ=="
+        }
+    }
+}

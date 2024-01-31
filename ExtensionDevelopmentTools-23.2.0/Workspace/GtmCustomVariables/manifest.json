@@ -1,0 +1,42 @@
+{
+	"name": "GtmCustomVariables",
+	"fantasyName": "GTM Custom Variables",
+	"vendor": "PetShop",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Adds new custom variables to the dataLayer",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/Main/JavaScript/PetShop.GtmCustomVariables.Main.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/PetShop.GtmCustomVariables.Main.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PetShop/GtmCustomVariables@1.0.0",
+	"activation_id": "4",
+	"extension_id": "5903"
+}

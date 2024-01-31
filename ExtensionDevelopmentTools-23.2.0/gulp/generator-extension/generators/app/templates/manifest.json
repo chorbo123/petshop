@@ -1,0 +1,9 @@
+{
+	"fantasyName": "<%= fantasy_name %>",
+	"name": "<%= name %>",
+	"version": "<%= version %>",
+	"vendor": "<%= vendor %>",
+	"type": "<%= type %>",
+	"target": "<%= target %>",
+	"description": "<%= description %>"
+}

@@ -1,0 +1,126 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "seopaInsurance",
+        "group": "integrations",
+        "title": "SEOPA Insurance",
+        "docRef": "bridgehead_837483748110555",
+        "description": "Settings for the shipping methods which are allowed on the checkout"
+    },
+    "properties": {
+        "seopaInsurance.seopaPartnerId": {
+            "group": "integrations",
+            "subtab": "seopaInsurance",
+            "type": "string",
+            "title": "SEOPA Insurance Partner ID ID",
+            "description": "The partner ID of the SEOPA Insurance account.",
+            "mandatory": true,
+            "default": "e9bf34c0d9bd2cb93bf4b92b7115eed9"
+        },
+        "seopaInsurance.forms": {
+            "group": "integrations",
+            "subtab": "seopaInsurance",
+            "type": "array",
+            "title": "SEOPA Insurance Forms",
+            "description": "A list of all SEOPA insurance forms and their settings",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "pageTitle": {
+                        "type": "string",
+                        "title": "Page Title",
+                        "description": "The page title of this form",
+                        "mandatory": true
+                    },
+                    "pageHeader": {
+                        "type": "string",
+                        "title": "Page Header",
+                        "description": "The page header of this form",
+                        "mandatory": true
+                    },
+                    "urlComponent": {
+                        "type": "string",
+                        "title": "URL Component",
+                        "description": "The URL component of this form",
+                        "mandatory": true
+                    },
+                    "formType": {
+                        "type": "string",
+                        "title": "Form Type",
+                        "description": "The type of form (See SEOPI support for details)",
+                        "mandatory": true
+                    },
+                    "formHeight": {
+                        "type": "string",
+                        "title": "Form Height",
+                        "description": "The height of the form in CSS units (100px, 100%, etc)"
+                    }
+                }
+            },
+            "default": [
+                {
+                    "pageTitle": "Pet Insurance",
+                    "pageHeader": "Pet Insurance",
+                    "urlComponent": "pet",
+                    "formType": "pet"
+                },
+                {
+                    "pageTitle": "Home Insurance",
+                    "pageHeader": "Home Insurance",
+                    "urlComponent": "home",
+                    "formType": "home",
+                    "formHeight": "1100px"
+                },
+                {
+                    "pageTitle": "Horsebox Insurance",
+                    "pageHeader": "Horsebox Insurance",
+                    "urlComponent": "horsebox",
+                    "formType": "horsebox",
+                    "formHeight": "1250px"
+                },
+                {
+                    "pageTitle": "Park Home Insurance",
+                    "pageHeader": "Park Home Insurance",
+                    "urlComponent": "park-home",
+                    "formType": "parkhome",
+                    "formHeight": "1350px"
+                },
+                {
+                    "pageTitle": "Holiday Home Insurance",
+                    "pageHeader": "Holiday Home Insurance",
+                    "urlComponent": "holiday-home",
+                    "formType": "holidayhome",
+                    "formHeight": "1350px"
+                },
+                {
+                    "pageTitle": "Horse Insurance",
+                    "pageHeader": "Horse Insurance",
+                    "urlComponent": "horse",
+                    "formType": "horse",
+                    "formHeight": "1400px"
+                },
+                {
+                    "pageTitle": "Non Standard Home Insurance",
+                    "pageHeader": "Non Standard Home Insurance",
+                    "urlComponent": "non-standard-home",
+                    "formType": "nonstandardhome",
+                    "formHeight": "1700px"
+                },
+                {
+                    "pageTitle": "Trailer Insurance",
+                    "pageHeader": "Trailer Insurance",
+                    "urlComponent": "trailer",
+                    "formType": "trailer",
+                    "formHeight": "1300px"
+                },
+                {
+                    "pageTitle": "Farm Vehicle Insurance",
+                    "pageHeader": "Farm Vehicle Insurance",
+                    "urlComponent": "farm-vehicle",
+                    "formType": "farmvehicle",
+                    "formHeight": "1400px"
+                }
+            ]
+        }
+    }
+}

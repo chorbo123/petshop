@@ -1,0 +1,36 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "bloomreachTracking",
+        "title": "Bloomreach Tracking",
+        "docRef": "bridgehead_84758745900938",
+        "description": "Bloomreach Tracking",
+        "group": "integrations"
+    }
+,	"properties": {
+		"tracking.bloomreachTracking.apiUrl": {
+			"group": "integrations"
+		,	"subtab": "bloomreachTracking"
+		,	"type": "string"
+		,	"title": "Bloomreach Tracking API URL"
+		,	"description": "Enter the Bloomreach tracking API URL."
+		,	"default": "https://api.uk.exponea.com"
+		}, 
+		"tracking.bloomreachTracking.apiFullPath": {
+			"group": "integrations"
+		,	"subtab": "bloomreachTracking"
+		,	"type": "string"
+		,	"title": "Bloomreach Tracking API Full Path"
+		,	"description": "Enter the Bloomreach tracking API full path."
+		,	"default": ""
+		},
+  "tracking.bloomreachTracking.apiToken": {
+			"group": "integrations"
+		,	"subtab": "bloomreachTracking"
+		,	"type": "string"
+		,	"title": "Bloomreach Tracking API Token"
+		,	"description": "Enter the API Token used for Bloomreach tracking."
+		,	"default": "5a2dcc1e-ab5d-11ec-9b96-3e1a4691bd73"
+		}
+	}
+}

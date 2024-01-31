@@ -1,0 +1,28 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "zopimChat",
+        "group": "integrations",
+        "title": "Zopim Chat",
+        "docRef": "bridgehead_934793874983",
+        "description": "Zopim Chat related configuration "
+    },
+    "properties": {
+        "zopimChat.enabled": {
+            "group": "integrations",
+            "subtab": "zopimChat",
+            "type": "boolean",
+            "title": "Enable Zopim Chat",
+            "description": "Select if the Zopim Chat application should be enabled.",
+            "default": false
+        },
+        "zopimChat.accountId": {
+            "group": "integrations",
+            "subtab": "zopimChat",
+            "type": "string",
+            "title": "Zopim Chat Account ID",
+            "description": "The account ID for Zopim Chat.",
+            "default": "33thuOUNIjDQMnm5GIfuZZHJwXYmDRwU"
+        }
+    }
+}

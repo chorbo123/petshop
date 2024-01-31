@@ -1,0 +1,95 @@
+{
+	"type": "object",
+
+    "subtab": {
+        "id": "topratedbrands",
+        "group": "layout",
+        "title": "Top Rated Brands",
+        "docRef": "bridgehead_39493093400920",
+        "description": "Brands that are top rated."
+    },
+    
+    "properties": {
+        "topRatedBrands.numberOfItemsDisplayed": {
+            "group": "layout",
+            "subtab": "topratedbrands",
+            "type": "string",
+            "title": "Number of displayed items",
+            "description": "Enter the number of top-rated brands to display in the browser.",
+            "default": "50"
+        },
+        "topRatedBrands.brands": {
+            "group": "layout",
+            "subtab": "topratedbrands",
+            "type": "array",
+            "title": "Brands",
+            "description": "Brand details and images URLs",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Brand Name",
+                        "description": "The name of the brand.",
+                        "mandatory": true
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Brand URL",
+                        "description": "The URL of the brand.",
+                        "mandatory": true
+                    },
+                    "thumbnailUrl": {
+                        "type": "string",
+                        "title": "Thumbnail URL",
+                        "description": "The URL of the brand thumbnail image.",
+                        "mandatory": true
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to hide this brand"
+                    }
+                }
+            },
+            "default": [
+                {
+                    "name": "Arden Grange",
+                    "url": "/Brand/Arden-Grange",
+                    "thumbnailUrl": "http://staging.petshop.co.uk/SCA%20Product%20Images/Arden-Grange-Adult-Light-Chicken-Potato-Dry-Cat-Food-4kg_1.JPG?resizeid=3&resizeh=300&resizew=300"
+                },
+                {
+                    "name": "Beta",
+                    "url": "/Brand/Beta",
+                    "thumbnailUrl": "http://staging.petshop.co.uk/SCA%20Product%20Images/Beta-Grain-Free-Adult-Chicken-Dry-Dog-Food-1.5kg_1.png?resizeid=3&resizeh=300&resizew=300"
+                },
+                {
+                    "name": "Canagan",
+                    "url": "/Brand/Canagan",
+                    "thumbnailUrl": "http://staging.petshop.co.uk/SCA%20Product%20Images/Canagan-Dental-for-Small-Breed-Dog-6kg_1.jpg?resizeid=3&resizeh=300&resizew=300"
+                },
+                {
+                    "name": "Huntland",
+                    "url": "/Brand/Huntland",
+                    "thumbnailUrl": "http://staging.petshop.co.uk/SCA%20Product%20Images/Huntland-Adult-Salmon-Trout-Grain-Free-Working-Dog-Food-12kg_1.png?resizeid=3&resizeh=300&resizew=300"
+                },
+                {
+                    "name": "Hills",
+                    "url": "/Brand/Hills",
+                    "thumbnailUrl": "http://staging.petshop.co.uk/SCA%20Product%20Images/Hills-Prescription-Diet-Gastrointestinal-Biome-Chicken-Dry-Cat-Food-1-5kg_1.jpg?resizeid=3&resizeh=300&resizew=300"
+                },
+                {
+                    "name": "Iams",
+                    "url": "/Brand/Iams",
+                    "thumbnailUrl": "http://staging.petshop.co.uk/SCA%20Product%20Images/Iams-Delights-and-Sea-Collection-Cat-Food-48-x-85g_1.png?resizeid=3&resizeh=300&resizew=300"
+                },
+                {
+                    "name": "James Wellbeloved",
+                    "url": "/Brand/James-Wellbeloved",
+                    "thumbnailUrl": "http://staging.petshop.co.uk/SCA%20Product%20Images/James-Wellbeloved-Fish-Senior-Dry-Dog-Food-10kg_1.jpg?resizeid=3&resizeh=300&resizew=300"
+                }
+            ]
+           }
+    }
+
+}

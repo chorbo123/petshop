@@ -1,0 +1,21 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "defaultPriceLevel",
+        "group": "advancedSettings",
+        "title": "Default Price Level",
+        "docRef": "bridgehead_7487387871111",
+        "description": "The default price level for customers viewing the web store"
+    },
+    "properties": {
+        "defaultPriceLevel": {
+            "group": "advancedSettings",
+            "subtab": "defaultPriceLevel",
+            "type": "string",
+            "title": "Default Price Level ID",
+            "description": "The default price level for customers viewing the web store",
+            "mandatory": true,
+            "default": "5"
+        }
+    }
+}

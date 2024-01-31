@@ -1,0 +1,20 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "loyaltyRewardCards",
+        "group": "advancedSettings",
+        "title": "Loyalty Reward Cards",
+        "docRef": "bridgehead_004873i759930",
+        "description": "Loyalty Reward Cards related configuration "
+    },
+    "properties": {
+        "loyaltyRewardCards.enabled": {
+            "group": "advancedSettings",
+            "subtab": "loyaltyRewardCards",
+            "type": "boolean",
+            "title": "Enable Loyalty Reward Cards",
+            "description": "Select if the Loyalty Reward Cards should be enabled.",
+            "default": true
+        }
+    }
+}

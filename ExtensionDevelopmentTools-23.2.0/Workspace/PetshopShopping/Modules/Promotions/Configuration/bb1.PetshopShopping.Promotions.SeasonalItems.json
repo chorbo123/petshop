@@ -1,0 +1,70 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "seasonalItemsStep",
+        "group": "promotionsSettings",
+        "title": "Seasonal Items Checkout Step",
+        "docRef": "bridgehead_647939843298452093",
+        "description": "Seasonal Items Chcekout Step related configuration"
+    },
+    "properties": {
+        "promotions.checkout.seasonalItemsStep.enabled": {
+            "group": "promotionsSettings",
+            "subtab": "seasonalItemsStep",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the Seasonal Items checkout step should be enabled.",
+            "default": true
+        },
+        "promotions.checkout.seasonalItemsStep.title": {
+            "group": "promotionsSettings",
+            "subtab": "seasonalItemsStep",
+            "type": "string",
+            "title": "Page Title",
+            "description": "Enter the title for this checkout step.",
+            "default": "Christmas"
+        },
+        "promotions.checkout.seasonalItemsStep.urlComponent": {
+            "group": "promotionsSettings",
+            "subtab": "seasonalItemsStep",
+            "type": "string",
+            "title": "URL Component",
+            "description": "Enter the URL component for this checkout step.",
+            "default": "seasonal"
+        },
+        "promotions.checkout.seasonalItemsStep.heading": {
+            "group": "promotionsSettings",
+            "subtab": "seasonalItemsStep",
+            "type": "string",
+            "title": "Heading",
+            "description": "Enter the section heading for this checkout step.",
+            "default": "It's Christmas! Don't forget your pets presents..."
+        },
+        "promotions.checkout.seasonalItemsStep.actionButtonLabel": {
+            "group": "promotionsSettings",
+            "subtab": "seasonalItemsStep",
+            "type": "string",
+            "title": "Action Button Label",
+            "description": "Enter the action button label for each item displayed.",
+            "default": "Add to Cart +"
+        },
+        "promotions.checkout.seasonalItemsStep.facetFilterId": {
+            "group": "promotionsSettings",
+            "subtab": "seasonalItemsStep",
+            "type": "string",
+            "title": "Facet Filter ID",
+            "description": "Enter the field ID for the facet filter used for items displayed at this checkout step.",
+            "mandatory": true,
+            "default": "custitem_bb1_specials"
+        },
+        "promotions.checkout.seasonalItemsStep.facetFilterValue": {
+            "group": "promotionsSettings",
+            "subtab": "seasonalItemsStep",
+            "type": "string",
+            "title": "Facet Filter Value",
+            "description": "Enter the field URL value for the facet filter used for items displayed at this checkout step.",
+            "mandatory": true,
+            "default": "Christmas-Featured-Product"
+        }
+    }
+}

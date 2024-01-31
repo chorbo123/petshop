@@ -1,0 +1,510 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "itemListBanners",
+        "group": "searchConfig",
+        "title": "Search Result Banners",
+        "docRef": "bridgehead_0981484784578028478717940",
+        "description": "Search Result Banners related configuration"
+    },
+    "properties": {
+        "itemListBanners.enabled": {
+            "group": "searchConfig",
+            "subtab": "itemListBanners",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the item list banners should be enabled.",
+            "default": true
+        },
+        "itemListBanners.banners": {
+            "group": "searchConfig",
+            "subtab": "itemListBanners",
+            "type": "array",
+            "title": "Banners",
+            "description": "The banners displayed for specific search phrases",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "searchPhrase": {
+                        "type": "string",
+                        "title": "Search Phrase",
+                        "description": "The banner will be displayed when this search phrase is entered (case insensitive)."
+                    },
+                    "priority": {
+                        "type": "number",
+                        "title": "Priority",
+                        "description": "The priority ranking used to order banners when multiple matches are found. (Lower number = Higher rank)",
+                        "default": 0
+                    },
+                    "bannerHtml": {
+                        "type": "string",
+                        "nsType": "textarea",
+                        "title": "Banner HTML",
+                        "description": "The HTML for the item list banner."
+                    },
+                    "scheduledActivation": {
+                        "type": "string",
+                        "nsType": "datetimetz",
+                        "title": "Scheduled Activation",
+                        "description": "Enter the date/time to activate (DD/MM/YYYY HH:MM)"
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to set the line inactive.",
+                        "default": false
+                    }
+                }
+            },
+            "default": [
+                {
+                    "searchPhrase": "dog",
+                    "bannerHtml": "<p><a href=\"/Promotions/2124,2125\" data-touchpoint=\"home\" data-hashtag=\"#/Promotions/2124,2125\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"ProPlan Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Purina.jpg\"></a></p><div data-type=\"merchandising-zone\" data-id=\"top-sellers-sidebar\"></div>"
+                },
+                {
+                    "searchPhrase": "dental chews",
+                    "bannerHtml": "<p><a href=\"/Brand/Pedigree?order=relevance:desc&keywords=dentastix\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Pedigree?order=relevance:desc&keywords=dentastix\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Dentastix');\"> <img alt=\"Dentastix Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-Dentastix-PS.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "beta",
+                    "bannerHtml": "<p><a href=\"/Brand/Beta\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Beta\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"BETA Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Dog/Search/Search-Beta.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "pro plan dog",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Pro-Plan\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Pro-Plan\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"ProPlan Dog Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/February%202021/Dog/Search-ProPlan-Dog.png\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dentalife dog",
+                    "bannerHtml": "<p><a href=\"/Brand/Dentalife/Type/On-Sale/weight/1to5\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Dentalife/Type/On-Sale/weight/1to5\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"Dentalife Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Dentastix.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "winalot",
+                    "bannerHtml": "<p><a href=\"/Brand/Winalot\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Winalot\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"Winalot Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Dog/Search/Search-Winalot.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "pro plan cat",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Pro-Plan\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Pro-Plan\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"Pro Plan Cat Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Cat/Category/CatDry-ProPlan.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dentalife cat",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Dentalife\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Dentalife\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"Dentalife Cat Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/February%202021/Cat/Search-Dentalife-Cat.png\"></a></p>"
+                },
+                {
+                    "searchPhrase": "gourmet",
+                    "bannerHtml": "<p><a href=\"/Brand/Gourmet?order=weight:desc\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Gourmet?order=weight:desc\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"Gourmet Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Cat/Category/CatWet-Gourmet.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "felix",
+                    "bannerHtml": "<p><a href=\"/Brand/Gourmet?order=weight:desc\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Gourmet?order=weight:desc\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Purina');\"> <img alt=\"Gourmet Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Cat/Category/CatWet-Gourmet.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "huntland",
+                    "bannerHtml": "<p><a href=\"/Brand/Huntland/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Huntland/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Huntland');\"> <img alt=\"Huntland Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Dog/Search/Search-Huntland.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "country kitchen",
+                    "bannerHtml": "<p><a href=\"/Brand/Country-Kitchen\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Country-Kitchen\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner CountryKitchen');\"> <img alt=\"CountryKitchen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Dog/Search/Search-CountryKitchen.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "champers",
+                    "bannerHtml": "<p><a href=\"/Brand/Champers\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Champers\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Champers');\"> <img alt=\"Champers Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Dog/Search/Search-Champers.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "naturediet",
+                    "bannerHtml": "<p><a href=\"/Brand/Naturediet/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Naturediet/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Naturediet');\"> <img alt=\"Naturediet Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Search-Naturediet.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "orijen dog",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Orijen/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Orijen/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Orijen');\"> <img alt=\"Orijen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Dog/Search/Search-Orijen-Dog.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "orijen dog food",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Orijen/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Orijen/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Orijen');\"> <img alt=\"Orijen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Dog/Search/Search-Orijen-Dog.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "orijen dry dog food",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Orijen/Type/Bottomless-Bowl-Discountt\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Orijen/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Orijen');\"> <img alt=\"Orijen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Dog/Search/Search-Orijen-Dog.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "orijen",
+                    "bannerHtml": "<p><a href=\"/Brand/Orijen/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Orijen/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Orijen');\"> <img alt=\"Orijen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Search-Orijen-1.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "chappie",
+                    "bannerHtml": "<p><a href=\"/Brand/Chappie\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Chappie\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Chappie');\"> <img alt=\"Chappie Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-Chappie-PS.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "crave",
+                    "bannerHtml": "<p><a href=\"/Brand/Crave\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Crave\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Crave');\"> <img alt=\"Crave Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-CRAVE-PS.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dentastix",
+                    "bannerHtml": "<p><a href=\"/Brand/Pedigree?order=relevance:desc&keywords=dentastix\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Pedigree?order=relevance:desc&keywords=dentastix\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Dentastix');\"> <img alt=\"Dentastix Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-Dentastix-PS.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "jumbone",
+                    "bannerHtml": "<p><a href=\"/Dog/Dog-Treats-Chews/Brand/Pedigree\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Dog-Treats-Chews/Brand/Pedigree\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Pedigree Treats');\"> <img alt=\"Pedigree Treats Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-Pedigree-PS-1.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "schmackos",
+                    "bannerHtml": "<p><a href=\"/Dog/Dog-Treats-Chews/Brand/Pedigree\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Dog-Treats-Chews/Brand/Pedigree\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Pedigree Treats');\"> <img alt=\"Pedigree Treats Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-Pedigree-PS-1.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "rodeo",
+                    "bannerHtml": "<p><a href=\"/Dog/Dog-Treats-Chews/Brand/Pedigree\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Dog-Treats-Chews/Brand/Pedigree\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Pedigree Treats');\"> <img alt=\"Pedigree Treats Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-Pedigree-PS-1.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "pedigree treats",
+                    "bannerHtml": "<p><a href=\"/Dog/Dog-Treats-Chews/Brand/Pedigree\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Dog-Treats-Chews/Brand/Pedigree\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Pedigree Treats');\"> <img alt=\"Pedigree Treats Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-Pedigree-PS-1.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "pedigree chews",
+                    "bannerHtml": "<p><a href=\"/Dog/Dog-Treats-Chews/Brand/Pedigree\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Dog-Treats-Chews/Brand/Pedigree\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Pedigree Treats');\"> <img alt=\"Pedigree Treats Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-Pedigree-PS-1.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "james wellbeloved",
+                    "bannerHtml": "<p><a href=\"/Brand/James-Wellbeloved\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/James-Wellbeloved\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner JWB');\"> <img alt=\"JWB Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/May%202021/Mars%20Search/Search-JWB-PS.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "grain free",
+                    "bannerHtml": "<p><a href=\"/Brand/Huntland/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Huntland/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Huntland');\"> <img alt=\"Huntland Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Dog/Search/Search-Huntland.jpg\"></a></div></p>\n<div data-search-keyword-banners=\"grain free dog food",
+                    "bannerHtml": "<p><a href=\"/Brand/Huntland/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Huntland/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Huntland');\"> <img alt=\"Huntland Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Dog/Search/Search-Huntland.jpg\"></a></div></p>\n<div data-search-keyword-banners=\"hypoallergenic dog food",
+                    "bannerHtml": "<p><a href=\"/Brand/Huntland/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Huntland/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Huntland');\"> <img alt=\"Huntland Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Dog/Search/Search-Huntland.jpg\"></a></div></p>\n<div data-search-keyword-banners=\"natural dog food",
+                    "bannerHtml": "<p><a href=\"/Brand/Huntland/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Huntland/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Huntland');\"> <img alt=\"Huntland Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Dog/Search/Search-Huntland.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "sensitive dog",
+                    "bannerHtml": "<p><a href=\"/Brand/Huntland/Type/Bottomless-Bowl-Discount\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Huntland/Type/Bottomless-Bowl-Discount\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Huntland');\"> <img alt=\"Huntland Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/April%202021/Dog/Search/Search-Huntland.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dog food",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Dog-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dry dog food",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Dog-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dog biscuits",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Dog-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "immunity",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Dog-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dry puppy food",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Hills/Life-Stage/Puppy\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Hills/Life-Stage/Puppy\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Puppy-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "puppy food",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Hills/Life-Stage/Puppy\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Hills/Life-Stage/Puppy\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Puppy-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "puppy",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Hills/Life-Stage/Puppy\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Hills/Life-Stage/Puppy\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Puppy-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "metabolic",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=metabolic\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=metabolic\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Metabolic-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "obesity",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=metabolic\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=metabolic\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Metabolic-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "renal cat food",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet/For-Cats-With/Renal-problems\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet/For-Cats-With/Renal-problems\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatRenal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "renal cat",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet/For-Cats-With/Renal-problems\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet/For-Cats-With/Renal-problems\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatRenal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat renal",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet/For-Cats-With/Renal-problems\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet/For-Cats-With/Renal-problems\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatRenal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "renal",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=renal\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=renal\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Renal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "feline renal",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet/For-Cats-With/Renal-problems\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet/For-Cats-With/Renal-problems\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatRenal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "neutered cat food",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills/For-Cats-With/Neutered\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills/For-Cats-With/Neutered\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatSterilised-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "sterilised cat food",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills/For-Cats-With/Neutered\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills/For-Cats-With/Neutered\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatSterilised-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hypoallergenic",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=liver%20care\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=liver%20care\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Hepatic-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hepatic",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=liver%20care\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=liver%20care\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Hepatic-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hypoallergenic",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=liver%20care\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=liver%20care\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Hepatic-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "liver",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=liver%20care\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=liver%20care\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Hepatic-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "urinary",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=urinary\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=urinary\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Urinary-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "gastrointestinal",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=gastrointestinal\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=gastrointestinal\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Gastrointestinal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "digestive care",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=gastrointestinal\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=gastrointestinal\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Gastrointestinal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "gastro intestinal",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=gastrointestinal\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=gastrointestinal\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Gastrointestinal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "gastro",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=gastrointestinal\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=gastrointestinal\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Gastrointestinal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "prescription diet",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/PrescriptionDiet-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "diabetic",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=diabetic\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=diabetic\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Diabetic-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "low fat",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills?order=relevance:desc&keywords=low%20fat\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills?order=relevance:desc&keywords=low%20fat\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/LowFat-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "thyroide",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=thyroide\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=thyroide\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Thyroid-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "kitten",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills/Life-Stage/Kitten\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills/Life-Stage/Kitten\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Kitten-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "kitten food",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills/Life-Stage/Kitten\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills/Life-Stage/Kitten\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Kitten-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dry kitten food",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills/Life-Stage/Kitten\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills/Life-Stage/Kitten\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Kitten-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat pouches",
+                    "bannerHtml": "<p><a href=\"/Brand/Gourmet/weight/5to10\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Gourmet/weight/5to10\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Gourmet');\"> <img alt=\"Gourmet Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-Gourmet.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Cat-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dry cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Cat-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat biscuits",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Cat-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Cat-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat dry food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Cat-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat food dry",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Cat-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dog treats",
+                    "bannerHtml": "<p><a href=\"/Dog/Dog-Treats-Chews/Brand/Catch\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Dog-Treats-Chews/Brand/Catch\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Catch');\"> <img alt=\"Catch Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Catch.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "grain free cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Orijen\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Orijen\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Orijen');\"> <img alt=\"Orijen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-Orijen.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "natural cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Orijen\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Orijen\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Orijen');\"> <img alt=\"Orijen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-Orijen.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "no grain cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Orijen\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Orijen\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Orijen');\"> <img alt=\"Orijen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-Orijen.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "healthy cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Orijen\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Orijen\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Orijen');\"> <img alt=\"Orijen Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-Orijen.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat treats",
+                    "bannerHtml": "<p><a href=\"/Cat/Cat-Treats/Brand/Applaws\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Cat-Treats/Brand/Applaws\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Applaws');\"> <img alt=\"Applaws Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-Applaws.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hypoallergenic cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/James-Wellbeloved\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/James-Wellbeloved\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner JWB');\"> <img alt=\"JWB Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-JWB.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "canned kitten food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Applaws/Life-Stage/Kitten\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Applaws/Life-Stage/Kitten\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Applaws');\"> <img alt=\"Applaws Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-WetApplaws.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hypoallergenic treats",
+                    "bannerHtml": "<p><a href=\"/Brand/Pet-Munchies\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Pet-Munchies\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner PetMunchies');\"> <img alt=\"PetMunchies Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Specialist-Search-PetMunchies.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hypoallergenic food",
+                    "bannerHtml": "<p><a href=\"/Brand/James-Wellbeloved\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/James-Wellbeloved\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner JWB');\"> <img alt=\"JWB Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Specialist-Search-JWB.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "calming",
+                    "bannerHtml": "<p><a href=\"/Brand/Feliway\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Feliway\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Feliway');\"> <img alt=\"Feliway Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Specialist-Search-Feliway.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dog chew",
+                    "bannerHtml": "<p><a href=\"/Dog/Dog-Treats-Chews/Brand/Good-Boy\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Dog-Treats-Chews/Brand/Good-Boy\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner GoodBoy');\"> <img alt=\"GoodBoy Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-GoodBoy.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "chews",
+                    "bannerHtml": "<p><a href=\"/Dog/Dog-Treats-Chews/Brand/Good-Boy\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Dog-Treats-Chews/Brand/Good-Boy\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner GoodBoy');\"> <img alt=\"GoodBoy Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-GoodBoy.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "pigs ears",
+                    "bannerHtml": "<p><a href=\"/Hollings-Pigs-Ear-X-Large-Bulk-1Pack-Natural-Dog-Chews-25S\" data-touchpoint=\"home\" data-hashtag=\"#/Hollings-Pigs-Ear-X-Large-Bulk-1Pack-Natural-Dog-Chews-25S\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hollings');\"> <img alt=\"Hollings Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Hollings.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dog bones",
+                    "bannerHtml": "<p><a href=\"/Hollings-Pigs-Ear-X-Large-Bulk-1Pack-Natural-Dog-Chews-25S\" data-touchpoint=\"home\" data-hashtag=\"#/Hollings-Pigs-Ear-X-Large-Bulk-1Pack-Natural-Dog-Chews-25S\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hollings');\"> <img alt=\"Hollings Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Hollings.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "bone",
+                    "bannerHtml": "<p><a href=\"/Hollings-Pigs-Ear-X-Large-Bulk-1Pack-Natural-Dog-Chews-25S\" data-touchpoint=\"home\" data-hashtag=\"#/Hollings-Pigs-Ear-X-Large-Bulk-1Pack-Natural-Dog-Chews-25S\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hollings');\"> <img alt=\"Hollings Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Hollings.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "rawhide",
+                    "bannerHtml": "<p><a href=\"/Good-Boy-Mega-Chewy-Twist-with-Chicken-Dog-Treat-70g\" data-touchpoint=\"home\" data-hashtag=\"#/Good-Boy-Mega-Chewy-Twist-with-Chicken-Dog-Treat-70g\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner GoodBoy');\"> <img alt=\"GoodBoy Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-GoodBoy-1.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "puppy treats",
+                    "bannerHtml": "<p><a href=\"/Pointer-Puppy-Love-Dog-Treats-400g\" data-touchpoint=\"home\" data-hashtag=\"#/Pointer-Puppy-Love-Dog-Treats-400g\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Pointer');\"> <img alt=\"Pointer Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-PointerPuppy.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "bones",
+                    "bannerHtml": "<p><a href=\"/Brand/Pointer\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Pointer\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Pointer');\"> <img alt=\"Pointer Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Pointer.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "training treats",
+                    "bannerHtml": "<p><a href=\"/Brand/Pointer\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Pointer\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Pointer');\"> <img alt=\"Pointer Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Pointer.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dog joint aid",
+                    "bannerHtml": "<p><a href=\"/Brand/Yumove\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Yumove\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Yumove');\"> <img alt=\"YuMove Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Dog/Search/Dog-Search-Yumove.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "soup",
+                    "bannerHtml": "<p><a href=\"/Brand/Felix/Type/On-Sale?order=relevance:desc&keywords=soup\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Felix/Type/On-Sale?order=relevance:desc&keywords=soup\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Felix');\"> <img alt=\"Felix Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-FelixSoup.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "kitten milk",
+                    "bannerHtml": "<p><a href=\"/Whiskas-Milk-for-Cats\" data-touchpoint=\"home\" data-hashtag=\"#/Whiskas-Milk-for-Cats\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Whiskas');\"> <img alt=\"Whiskas Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-WhiskasMilk.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cats",
+                    "bannerHtml": "<p><a href=\"/Brand/Gourmet/weight/5to10\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Gourmet/weight/5to10\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Gourmet');\"> <img alt=\"Gourmet Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Cat/Search/Cat-Search-Gourmet.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "dental",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet/Type/Dental\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet/Type/Dental\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Dental-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "teeth",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet/Type/Dental\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet/Type/Dental\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Dental-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "oral care",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet/Type/Dental\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet/Type/Dental\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Dental-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "joint aid",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=joint\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=joint\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/JointSupport-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "joint",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=joint\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=joint\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/JointSupport-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "joint support",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=joint\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=joint\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/JointSupport-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "joint care",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=joint\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=joint\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/JointSupport-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "sensitive",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills?order=relevance:desc&keywords=sensitive\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills?order=relevance:desc&keywords=sensitive\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Sensitive-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "sensitive stomach",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills?order=relevance:desc&keywords=sensitive\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills?order=relevance:desc&keywords=sensitive\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Sensitive-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "sensitivity",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills?order=relevance:desc&keywords=sensitive\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills?order=relevance:desc&keywords=sensitive\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Sensitive-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "renal dog food",
+                    "bannerHtml": "<p><a href=\"/Dog/Brand/Hills-Prescription-Diet/For-Dogs-With/Renal-problems\" data-touchpoint=\"home\" data-hashtag=\"#/Dog/Brand/Hills-Prescription-Diet/For-Dogs-With/Renal-problems\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/DogRenal-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "cat dental",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills-Prescription-Diet/Type/Dental\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills-Prescription-Diet/Type/Dental\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatDental-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hairball prevention",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills/For-Cats-With/Hairball\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills/For-Cats-With/Hairball\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Hairball-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hairballs",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills/For-Cats-With/Hairball\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills/For-Cats-With/Hairball\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Hairball-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "hairball",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills/For-Cats-With/Hairball\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills/For-Cats-With/Hairball\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Hairball-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "urinary cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills-Prescription-Diet/For-Cats-With/Urinary\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills-Prescription-Diet/For-Cats-With/Urinary\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Caturinary-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "diabetic cat food",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet/For-Cats-With/Weight-managment?order=relevance:desc&keywords=w%2Fd\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet/For-Cats-With/Weight-managment?order=relevance:desc&keywords=w%2Fd\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatDiabetic-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "light cat food",
+                    "bannerHtml": "<p><a href=\"/Cat/Brand/Hills/For-Cats-With/Weight-managment\" data-touchpoint=\"home\" data-hashtag=\"#/Cat/Brand/Hills/For-Cats-With/Weight-managment\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/CatLight-Search-Hills.jpg\"></a></p>"
+                },
+                {
+                    "searchPhrase": "kidney",
+                    "bannerHtml": "<p><a href=\"/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=renal\" data-touchpoint=\"home\" data-hashtag=\"#/Brand/Hills-Prescription-Diet?order=relevance:desc&keywords=renal\" onclick=\"ga('send', 'event', 'banner', 'click', 'SearchBanner Hills');\"> <img alt=\"Hills Banner\" src=\"https://www.petshop.co.uk/Homepage%20Banners/2021/June%202021/Search/Renal-Search-Hills.jpg\"></a></div></p>"
+                }
+            ]
+        }
+    }
+}

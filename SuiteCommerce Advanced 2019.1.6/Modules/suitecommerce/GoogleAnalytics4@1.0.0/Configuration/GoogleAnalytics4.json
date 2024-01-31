@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "analyticsFour",
+        "title": "Google Analytics 4",
+        "docRef": "bridgehead_4667032443",
+        "description": "Google Analytics 4",
+        "group": "integrations"
+    },
+    "properties": {
+        "tracking.googleAnalyticsFour.propertyID": {
+            "group": "integrations",
+            "subtab": "analyticsFour",
+            "type": "string",
+            "title": "Google Analytics 4 ID",
+            "description": "Enter the Google Analytics 4 Tracking ID. SuiteCommerce Advanced inserts this property into each page of the application. To locate the tracking ID, login to your Google Analytics 4 account and go to Admin > Data Streams > select your data stream > MEASUREMENT ID.",
+            "default": ""
+        },
+        "tracking.googleAnalyticsFour.domainName": {
+            "group": "integrations",
+            "subtab": "analyticsFour",
+            "type": "string",
+            "title": "Google Analytics 4 domain",
+            "description": "Enter the domain used for Google Analytics. The value you enter depends on which application you want to use Google Analytics",
+            "default": ""
+        },
+        "tracking.googleAnalyticsFour.domainNameSecure": {
+            "group": "integrations",
+            "subtab": "analyticsFour",
+            "type": "string",
+            "title": "Google Analytics 4 secure domain",
+            "description": "Enter the secure domain used for Google Analytics 4. Possible values are the same as the Google Analytics Domain property.",
+            "default": ""
+        }
+    }
+}

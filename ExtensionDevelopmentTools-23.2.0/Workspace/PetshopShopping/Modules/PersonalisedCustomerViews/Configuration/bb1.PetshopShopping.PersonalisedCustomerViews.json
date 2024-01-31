@@ -1,0 +1,20 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "personalisedCustomerViews",
+        "group": "advancedSettings",
+        "title": "personalisedCustomerViews",
+        "docRef": "bridgehead_93889678904897",
+        "description": "Personalised Customer Views related configuration"
+    },
+    "properties": {
+        "personalisedCustomerViews.enabled": {
+            "group": "advancedSettings",
+            "subtab": "personalisedCustomerViews",
+            "type": "boolean",
+            "title": "Enable Personalised Customer Views",
+            "description": "Select if personalised Customer Views should be enabled.",
+            "default": true
+        }
+    }
+}

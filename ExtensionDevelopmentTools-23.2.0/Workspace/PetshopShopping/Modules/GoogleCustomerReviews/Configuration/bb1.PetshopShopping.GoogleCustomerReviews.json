@@ -1,0 +1,133 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "googleCustomerReviews",
+        "group": "integrations",
+        "title": "Google Customer Reviews",
+        "docRef": "bridgehead_9108568389287",
+        "description": "Google Customer Reviews related configuration "
+    },
+    "properties": {
+        "googleCustomerReviews.enabled": {
+            "group": "integrations",
+            "subtab": "googleCustomerReviews",
+            "type": "boolean",
+            "title": "Enable Google Customer Reviews",
+            "description": "Select if the Google Customer Reviews integration should be enabled.",
+            "default": true
+        },
+        "googleCustomerReviews.storeId": {
+            "group": "integrations",
+            "subtab": "googleCustomerReviews",
+            "type": "string",
+            "title": "Google Customer Reviews Store ID",
+            "description": "Enter the Google Customer Reviews Store ID.",
+            "default": "8582373"
+        },
+        "googleCustomerReviews.reviews": {
+            "group": "integrations",
+            "subtab": "googleCustomerReviews",
+            "type": "array",
+            "title": "Customer Reviews",
+            "description": "The customer reviews displayed in the customer review slider.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "reviewText": {
+                        "type": "string",
+                        "nsType": "textarea",
+                        "title": "Review Text",
+                        "description": "The text of the customer's review.",
+                        "mandatory": true
+                    },
+                    "reviewerName": {
+                        "type": "string",
+                        "title": "Reviewer's Name",
+                        "description": "The name of the reviewer."
+                    },
+                    "dateReviewed": {
+                        "type": "string",
+                        "title": "Date Reviewed",
+                        "description": "The date of the review."
+                    },
+                    "reviewRating": {
+                        "type": "integer",
+                        "title": "Rating",
+                        "description": "The rating for this review."
+                    },
+                    "reviewerImageUrl": {
+                        "type": "string",
+                        "title": "Reviewer's Image URL",
+                        "description": "The image URL of the reviewer."
+                    },
+                    "reviewerUrl": {
+                        "type": "string",
+                        "title": "Reviewer's URL",
+                        "description": "The URL of the reviewer."
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to hide this review"
+                    }
+                }
+            },
+            "default": [
+            {
+                "reviewText": "Ordered online - click and collect. Friendly, extremely efficient staff Entrance at side of building",
+                "reviewRating": 5,
+                "reviewerName": "Tracy King",
+                "reviewerImageUrl": "https://lh3.googleusercontent.com/-SjI8JdPkn2k/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucl8KWZGII5LyXP9oBT2X7Laagp-Yw/s50-c-c0x00000000/photo.jpg",
+                "reviewerUrl": "https://www.google.com/maps/contrib/112014854561768991459/reviews",
+                "dateReviewed": "22/12/2020",
+                "inactive": false
+            },
+            {
+                "reviewText": "Small yard at rear might be best to back in off the road",
+                "reviewRating": 5,
+                "reviewerName": "Stuart Richardson",
+                "reviewerImageUrl": "https://lh3.googleusercontent.com/-FUb7ofodHgM/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckEc0_ogrk4VOtse7AV-sX9f-NraQ/s50-c-c0x00000000/photo.jpg",
+                "reviewerUrl": "https://www.google.com/maps/contrib/108638377482173130660/reviews",
+                "dateReviewed": "1/12/2020",
+                "inactive": false
+            },
+            {
+                "reviewText": "I've shopped with Petshopbowl for many years now, we've only ever had 1 mishap in that time of 7-8 yrs & it was resolved asap & i was satisfied. I like to phone & get a real person, helpful & friendly enough. My son likes the online ordering. Good quality products at competitive price's, free delivery what more do you need. With many thanks from Floki the ferret , Dexter dog & their humans.",
+                "reviewRating": 5,
+                "reviewerName": "MALICE Kitty",
+                "reviewerImageUrl": "https://lh3.googleusercontent.com/a-/AOh14GhDhAE09KyTL3ltmcKprgDcSMbJsno124Ny4mXH3T0=s50-c-c0x00000000",
+                "reviewerUrl": "https://www.google.com/maps/contrib/100564562346769592186/reviews",
+                "dateReviewed": "21/1/2020",
+                "inactive": false
+            },
+            {
+                "reviewText": "I have used them twice so far and picked up my cat food the day after ordering, half the price of anywhere else. Collection process could be slicker but girls in the office are an asset to the business.. I will continue to use them and would recommend to all",
+                "reviewRating": 5,
+                "reviewerName": "Paul Lucas",
+                "reviewerImageUrl": "https://lh3.googleusercontent.com/-ZIli_S2Wh4Y/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclEjk-FACjLrbDxIke72y5KPIC-6w/s50-c-c0x00000000/photo.jpg",
+                "reviewerUrl": "https://www.google.com/maps/contrib/104797918747519869785/reviews",
+                "dateReviewed": "19/12/2019",
+                "inactive": false
+            },
+            {
+                "reviewText": "Can’t understand the bad reviews?! I have used this company a lot, and have always been very impressed with the selection of foods/treats/feliway/accessories for my cats, the prices are good compared to other websites (I tend to use about 5 to compare prices before buying and they are always competitive), I like their emails that they send and everything arrives on time! I get a notification from Hermes when it is out for delivery. There was one time where they had issues with their stock and as my cat food was late being shipped, they sent me a voucher for my next purchase, which a lot of places wouldn’t bother to do. I can only suggest that you give them a go and see what you think yourself!",
+                "reviewRating": 5,
+                "reviewerName": "Jo Davies",
+                "reviewerImageUrl": "https://lh3.googleusercontent.com/--oS3qHcq1_8/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmvWMfhOnkwByjphn2ATlASLdWvUQ/s50-c-c0x00000000-ba4/photo.jpg",
+                "reviewerUrl": "https://www.google.com/maps/contrib/114920915480261264334/reviews",
+                "dateReviewed": "12/11/2019",
+                "inactive": false
+            },
+            {
+                "reviewText": "Despite previous bad reviews, I thought I would try anyway, I'm glad I did 😁 The pet food I wanted was half price, delivery was 3-5 days as stated & emails on progress of order. Thank you, will definitely use again 😁",
+                "reviewRating": 5,
+                "reviewerName": "v buxton",
+                "reviewerImageUrl": "https://lh3.googleusercontent.com/-S_XspIPLHIg/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucn5Y6pew0YxeEG-hiwtCJxHmo0daQ/s50-c-c0x00000000/photo.jpg",
+                "reviewerUrl": "https://www.google.com/maps/contrib/101720581914313692638/reviews",
+                "dateReviewed": "11/9/2019",
+                "inactive": false
+            }
+           ]
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "vouchers",
+        "group": "advancedSettings",
+        "title": "Vouchers",
+        "docRef": "bridgehead_93849857769911",
+        "description": "Vouchers related configuration "
+    },
+    "properties": {
+        "vouchers.enabled": {
+            "group": "advancedSettings",
+            "subtab": "vouchers",
+            "type": "boolean",
+            "title": "Enable Vouchers",
+            "description": "Select if the Vouchers page should be displayed.",
+            "default": true,
+            "hidden": true
+        }
+    }
+}

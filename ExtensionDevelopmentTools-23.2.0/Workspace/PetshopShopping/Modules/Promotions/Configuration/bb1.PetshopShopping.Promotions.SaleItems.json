@@ -1,0 +1,81 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "saleItemsStep",
+        "group": "promotionsSettings",
+        "title": "Sale Items Checkout Step",
+        "docRef": "bridgehead_874920820848939",
+        "description": "Sale Items Chcekout Step related configuration"
+    },
+    "properties": {
+        "promotions.checkout.saleItemsStep.enabled": {
+            "group": "promotionsSettings",
+            "subtab": "saleItemsStep",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the Sale Items checkout step should be enabled.",
+            "default": true
+        },
+        "promotions.checkout.saleItemsStep.title": {
+            "group": "promotionsSettings",
+            "subtab": "saleItemsStep",
+            "type": "string",
+            "title": "Page Title",
+            "description": "Enter the title for this checkout step.",
+            "default": "Flash Sale"
+        },
+        "promotions.checkout.saleItemsStep.urlComponent": {
+            "group": "promotionsSettings",
+            "subtab": "saleItemsStep",
+            "type": "string",
+            "title": "URL Component",
+            "description": "Enter the URL component for this checkout step.",
+            "default": "flash-sale"
+        },
+        "promotions.checkout.saleItemsStep.heading": {
+            "group": "promotionsSettings",
+            "subtab": "saleItemsStep",
+            "type": "string",
+            "title": "Heading",
+            "description": "Enter the section heading for this checkout step.",
+            "default": "Flash sale! Dentastix only 99p whilst stocks last..."
+        },
+        "promotions.checkout.saleItemsStep.actionButtonLabel": {
+            "group": "promotionsSettings",
+            "subtab": "saleItemsStep",
+            "type": "string",
+            "title": "Action Button Label",
+            "description": "Enter the action button label for each item displayed.",
+            "default": "Add to Cart +"
+        },
+        "promotions.checkout.saleItemsStep.saleItems": {
+            "group": "promotionsSettings",
+            "subtab": "saleItemsStep",
+            "type": "array",
+            "title": "Sale Items",
+            "description": "The sale items displayed in this checkout step.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "number",
+                        "title": "Internal ID",
+                        "description": "The internal ID of the item to display.",
+                        "mandatory": true
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Name",
+                        "description": "The name of the item. Not displayed online, only for reference in the configuration tool."
+                    },
+                    "inactive": {
+                        "type": "boolean",
+                        "title": "Inactive",
+                        "description": "Tick this option to not display this item"
+                    }
+                }
+            },
+            "default": []
+        }
+    }
+}

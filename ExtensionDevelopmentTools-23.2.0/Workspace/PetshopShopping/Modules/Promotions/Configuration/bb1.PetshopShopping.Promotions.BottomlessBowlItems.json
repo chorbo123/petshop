@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "bottomlessBowlItemsStep",
+        "group": "promotionsSettings",
+        "title": "Bottomless Bowl Items Checkout Step",
+        "docRef": "bridgehead_09372895775255465402",
+        "description": "Bottomless Bowl Items Checkout Step related configuration"
+    },
+    "properties": {
+        "promotions.checkout.bottomlessBowlItemsStep.enabled": {
+            "group": "promotionsSettings",
+            "subtab": "bottomlessBowlItemsStep",
+            "type": "boolean",
+            "title": "Enable",
+            "description": "Select if the Bottomless Bowl Items checkout step should be enabled.",
+            "hidden": true,
+            "default": true
+        },
+        "promotions.checkout.bottomlessBowlItemsStep.actionButtonLabel": {
+            "group": "promotionsSettings",
+            "subtab": "bottomlessBowlItemsStep",
+            "type": "string",
+            "title": "Action Button Label",
+            "description": "Enter the action button text for each item displayed.",
+            "hidden": true,
+            "default": "Update Order"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+	"type": "object",
+    "subtab": {
+        "id": "brontoPopup",
+        "group": "integrations",
+        "title": "Bronto Popup",
+        "docRef": "bridgehead_29727387690114979",
+        "description": "Bronto Popup related configuration "
+    },
+    "properties": {
+        "tracking.brontoPopup.enabled": {
+            "group": "integrations",
+            "subtab": "brontoPopup",
+            "type": "boolean",
+            "title": "Enable Bronto Popup",
+            "description": "Select if the Bronto Popup application should be enabled.",
+            "default": true
+        },
+        "tracking.brontoPopup.popupId": {
+            "group": "integrations",
+            "subtab": "brontoPopup",
+            "type": "string",
+            "title": "Bronto Popup ID",
+            "description": "Enter the Bronto Popup ID.",
+            "default": "26a2c89b-62a6-4ada-9fe3-68188be6a130"
+        }
+    }
+}

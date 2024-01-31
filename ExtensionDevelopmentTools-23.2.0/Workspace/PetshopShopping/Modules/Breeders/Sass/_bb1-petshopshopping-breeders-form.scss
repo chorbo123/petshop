@@ -1,0 +1,78 @@
+.breeders-form-container {
+ @extend .container;
+}
+
+.breeders-form{
+	@extend .box-column-bordered;
+ /*background: #fff;
+ margin: 20px 0;
+ padding: 0;*/
+ 
+ fieldset {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  
+  legend {
+   padding: 10px;
+   border: 1px solid #cccccc;
+   border-radius: 5px;
+   line-height: 1em;
+  }
+ }
+}
+
+.breeders-form-button-back{
+    @extend .button-back;
+}
+
+.breeders-form-button-back-icon{
+	@extend .button-back-icon;
+}
+
+.breeders-form-required {
+	display:block;
+	margin-top: 20px;
+}
+
+.breeders-form-controls-group{
+	/*@extend .control-group;*/
+}
+
+.breeders-form-label{
+	/*@extend .input-label;*/
+ display: block;
+}
+
+.breeders-form-required-star {
+	@extend .input-required;
+}
+
+.breeders-form-input, .breeders-form-select{
+	@extend .input-large;
+}
+
+.breeders-form-textarea{
+	/*@extend .input-textarea;*/
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.breeders-form-button-submit{
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.breeders-form-button {
+	@extend .button-medium;
+	@extend .button-secondary;
+}
+
+.breeders-application-header {
+ margin: 0 0 10px;
+ padding: 20px;
+ border-radius: 10px;
+ text-align: center;
+}
