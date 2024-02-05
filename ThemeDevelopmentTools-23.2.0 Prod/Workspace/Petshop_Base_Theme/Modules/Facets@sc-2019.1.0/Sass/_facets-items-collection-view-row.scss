@@ -1,0 +1,13 @@
+.facets-items-collection-view-row {
+	@extend .row;
+ display: flex;
+ flex-wrap: wrap;
+ margin-left: -10px;
+ margin-right: -10px;
+	padding-bottom:$sc-padding-lv3;
+ 
+ .safari & {
+  display: block;
+  flex-wrap: unset;
+ }
+}

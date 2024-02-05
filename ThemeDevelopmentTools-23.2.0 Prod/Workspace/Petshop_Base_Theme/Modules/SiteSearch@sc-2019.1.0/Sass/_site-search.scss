@@ -1,0 +1,123 @@
+.site-search {
+	@extend .site-search;
+	width: 100%;
+ display: block;
+ margin: 0;
+ padding: 0 14px 14px;
+ background: transparent;
+ 
+ @media(min-width: $screen-sm-min) {
+  padding: 0;
+ }
+}
+
+.site-search-content {
+	@extend .nav-search-content;
+ width: 100%;
+ height: auto;
+ margin: 0;
+ border-radius: 8px;
+}
+
+
+
+.site-search-content-input {
+	@extend .nav-search-content-input;
+ width: calc(100% - 52px);
+ width: expression(100% - 52px); /* IE-OLD */
+ 
+	.itemssearcher-input {
+  width: calc(100% - 28px);
+  width: expression(100% - 28px); /* IE-OLD */
+  height: 36px;
+  padding: 4px 14px;
+  box-shadow: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px 0 0 8px;
+  
+  @media(min-width: $screen-sm-min) {
+   height: 28px;
+  }
+ }
+ 
+	.itemssearcher-input:focus{
+		outline:none;
+		outline-style:none;
+		box-shadow:none;
+		border-color:transparent;
+	}
+ 
+ .tt-dropdown-menu {
+  width: calc(100% + 52px);
+  width: expression(100% + 52px); /* IE-OLD */
+  
+  .itemssearcher-item-results:focus,
+  .itemssearcher-item-results:hover {
+   background: #4757a7;
+   
+   .itemssearcher-item-results-title,
+   .itemssearcher-item-all-results,
+   .itemssearcher-item-no-results,
+   .itemssearcher-item-searching {
+    color: #fff;
+   }
+  }
+  
+  .itemssearcher-item-all-results:hover,
+  .itemssearcher-item-no-results:hover,
+  .itemssearcher-item-searching:hover {
+   color: #fff;
+  }
+ }
+}
+
+.site-search-input-icon {
+	@extend .nav-search-input-icon;
+	font-size: $sc-font-size-xxl;
+}
+
+.site-search-input-reset {
+	@extend .nav-search-input-reset;
+	right: 0;
+ display: none !important;
+}
+
+.site-search-button-submit {
+ margin-left: -1px;
+ padding: 8px 11px 8px 12px;
+ background: white;
+ border: none;
+ border-radius: 0 8px 8px 0;
+
+ .icon-search {
+  @extend .nav-search-input-icon;
+  position: relative;
+  display: block;
+  top: -2px;
+  left: 0px;
+  width: 30px;
+  height: 28px;
+  /*background: url(../extensions/bb1/Petshop_Base_Theme/19.1.0/img/petshop-2019-header-search-icon.png);*/
+  font-size: 29px;
+  color: #283a69;
+ }
+ 
+ @media(min-width: $screen-sm-min) {
+  /*height: 36px;*/
+  padding-top: 4px;
+  padding-bottom: 4px;
+  
+  .icon-search {
+   /*top: -11px;*/
+  }
+ }
+}
+
+.site-search-button-close {
+	@extend .nav-search-button-close;
+}
+
+.site-search-input-reset-icon {
+	@extend .nav-search-input-reset-icon;
+}

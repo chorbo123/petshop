@@ -1,0 +1,68 @@
+.recently-viewed-items {
+	position:relative;
+	h3{
+		margin-bottom:$sc-margin-lv8;
+
+		@media (max-width: $screen-sm-min) {
+			text-align: center;
+			font-size: 1.47rem;
+			color: #47589f;
+		}
+	}
+	
+	.bx-controls-direction{
+		text-align:right;
+		margin-bottom:$sc-margin-lv8;
+	}
+}
+
+ul.recently-viewed-row-cell li{
+	display:inline-block;
+}
+
+@media (max-width: $screen-sm-min) {
+	.recently-viewed-cell-item {
+        display: block;
+        position: relative;
+        background: #ececec;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 100%;
+        margin: 0 6px;
+        padding: 20px 10px;
+        min-height: 278px;
+
+		.facets-item-cell-grid{
+			margin: unset;
+		height: unset;
+		border: unset;
+		padding: unset;
+		}
+    }
+    
+    .facets-item-cell-grid-link-image img {
+        width: auto;
+        height: 100%;
+        mix-blend-mode: multiply;
+    }
+    
+    .facets-item-cell-grid-title {
+        color: #47589f;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.3;
+        text-align: left;
+    }
+    
+    .facets-item-cell-grid-details-bottom,
+	div[data-view="StockDescription"],
+	div[data-view="ItemViews.Promotions"]
+	{
+		display: none;
+	}
+    
+    .recently-viewed-row-cell {
+        display: flex;
+        align-items: stretch;
+    }
+}

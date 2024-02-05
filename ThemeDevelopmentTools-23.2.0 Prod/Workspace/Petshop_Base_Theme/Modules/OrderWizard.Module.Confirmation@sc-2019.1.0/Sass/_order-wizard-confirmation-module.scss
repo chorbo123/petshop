@@ -1,0 +1,27 @@
+.order-wizard-confirmation-module {
+	display: block;
+	padding: 0;
+	margin-bottom: $sc-margin-lv6;
+}
+.order-wizard-confirmation-module-title {
+	color: #0067b9;
+	margin: 0 0 10px;
+ line-height: 2.1rem;
+}
+.order-wizard-confirmation-module-body {
+	color: #000;
+}
+.order-wizard-confirmation-module-continue {
+	@extend .button-large;
+	@extend .button-secondary;
+	display:inline-block;
+	margin-top: $sc-margin-lv3;
+	margin-right: $sc-margin-lv4;
+}
+
+.order-wizard-confirmation-module-download-pdf {
+	@extend .button-large;
+	@extend .button-tertiary;
+	display:inline-block;
+	margin-top: $sc-margin-lv3;
+}

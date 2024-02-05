@@ -1,0 +1,117 @@
+.facets-item-cell-list {
+	@extend .row;
+	@extend .item-cell;
+
+	.cart-add-to-cart-button-container {
+		padding-left:0px;
+	}
+
+	.cart-quickaddtocart-price {
+		margin-bottom:$sc-margin-lv2;
+	}
+
+	.product-line-stock {
+		clear:both;
+	}
+}
+
+.facets-item-cell-list-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-list-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-list-left {
+	@extend .col-xs-3;
+}
+
+.facets-item-cell-list-right {
+	@extend .col-xs-9;
+
+	.item-views-price {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-list-image-wrapper {
+	position:relative;
+	text-align:center;
+}
+
+.facets-item-cell-list-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-list-details {
+	text-align:center;
+}
+
+.facets-item-cell-list-image {
+	width:100%;
+	height:auto;
+}
+
+.facets-item-cell-list-title {
+	@extend .item-cell-title;
+	text-align:left;
+}
+
+.facets-item-cell-list-price {
+	@extend .small-price;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.facets-item-cell-list-rating {
+	text-align:center;
+	display: inline-block;
+}
+
+
+.facets-item-cell-list {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+
+.facets-item-cell-list-image-free-delivery {
+ position: absolute;
+ bottom: 3px;
+ left: 3px;
+ width: 43px;
+ height: 28px;
+ background: url(../extensions/bb1/Petshop_Base_Theme/19.1.0/img/item-list-icon-free-delivery.png) no-repeat;
+ background-size: 100% 100%;
+}
+
+.facets-item-cell-list-image-sale {
+ position: absolute;
+ top: -1px;
+ right: 0;
+ width: 45px;
+ height: 45px;
+ background: url(../extensions/bb1/Petshop_Base_Theme/19.1.0/img/item-list-icon-sale.png) no-repeat;
+ background-size: 100% 100%;
+}
+
+.facets-item-cell-list-image-product-type {
+ position: absolute;
+ top: -1px;
+ left: 0;
+ width: 100px;
+ height: 100px;
+ background-position: 0 0;
+ background-repeat: no-repeat;
+}
+
+.facets-item-cell-list-image-next-day-delivery {
+ position: absolute;
+ bottom: 3px;
+ right: 3px;
+ width: 39px;
+ height: 33px;
+ background: url(../extensions/bb1/Petshop_Base_Theme/19.1.0/img/item-list-icon-next-day-delivery.png) no-repeat;
+ background-size: 100% 100%;
+}

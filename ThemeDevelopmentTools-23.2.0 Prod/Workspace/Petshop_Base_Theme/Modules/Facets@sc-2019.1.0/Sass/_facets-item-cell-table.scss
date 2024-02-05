@@ -1,0 +1,225 @@
+.facets-item-cell-table {
+	@extend .item-cell;
+ height: 100%;
+ border: 1px solid #cddee2;
+ padding: 8px;
+
+	.global-views-star-rating {
+		float:none;
+	}
+
+	.product-details-option-color {
+		text-align:center;
+	}
+
+	.product-details-facets-option-color {
+		text-align:center;
+	}
+
+	.cart-quickaddtocart-price {
+		text-align:left;
+		margin-bottom:0;
+	}
+
+	.cart-quickaddtocart {
+		text-align:center;
+	}
+
+	.cart-add-to-cart-button-container {
+		width:100%;
+		padding:0px;
+	}
+
+	.product-views-option-facets-color {
+		text-align:center;
+	}
+ 
+ .product-views-price-lead {
+  margin-right: 5px;
+  color: #b1181a;
+  font-size: 1.2em;
+ }
+ 
+ .product-views-price-old {
+  font-size: 0.8em;
+  color: #000;
+  text-decoration: none;
+ }
+ 
+ .product-line-stock-msg-out {
+  margin: 5px 0;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+ }
+}
+
+.facets-item-cell-table-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-table-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-table-image-wrapper {
+	position:relative;
+	text-align:center;
+
+	@media (min-width: $screen-xs-min)
+	{
+		/*width: 50%;
+		float: left;*/
+		padding: 0 $sc-margin-lv3;
+	}
+}
+
+.facets-item-cell-table-content-wrapper {
+	@media (min-width: $screen-xs-min)
+	{
+		/*width: 50%;
+		float: left;*/
+		display: block;
+		padding-left: $sc-margin-lv2;
+	}
+}
+
+
+
+
+
+
+
+.facets-item-cell-table-stock {
+	text-align:left;
+}
+
+.facets-item-cell-table-details {
+	text-align:left;
+}
+
+.facets-item-cell-table-image {
+	width: auto;
+	min-height: 153px;
+}
+
+.facets-item-cell-table-image-free-delivery {
+ position: absolute;
+ bottom: 3px;
+ left: 3px;
+ width: 43px;
+ height: 28px;
+ background: url(../extensions/bb1/Petshop_Base_Theme/19.1.0/img/item-list-icon-free-delivery.png) no-repeat;
+ background-size: 100% 100%;
+}
+
+.facets-item-cell-table-image-sale {
+ position: absolute;
+ top: -1px;
+ right: 0;
+ width: 45px;
+ height: 45px;
+ background: url(../extensions/bb1/Petshop_Base_Theme/19.1.0/img/item-list-icon-sale.png) no-repeat;
+ background-size: 100% 100%;
+}
+
+.facets-item-cell-table-image-product-type {
+ position: absolute;
+ top: -1px;
+ left: 0;
+ width: 100px;
+ height: 100px;
+ background-position: 0 0;
+ background-repeat: no-repeat;
+}
+
+.facets-item-cell-table-image-next-day-delivery {
+ position: absolute;
+ bottom: 3px;
+ right: 3px;
+ width: 39px;
+ height: 33px;
+ background: url(../extensions/bb1/Petshop_Base_Theme/19.1.0/img/item-list-icon-next-day-delivery.png) no-repeat;
+ background-size: 100% 100%;
+}
+
+.facets-item-cell-table-title {
+	@extend .item-cell-title;
+ font-size: 0.9em;
+ line-height: 1.3em;
+ padding-top: 6px;
+ padding-bottom: 6px;
+}
+
+.facets-item-cell-table-price {
+	@extend .small-price;
+	margin-bottom: 0;
+
+	.product-views-price {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-table-rating {
+	text-align:left;
+}
+
+.facets-item-cell-table {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+	.global-views-star-rating-container {
+		width:auto;
+		display:table;
+	}
+}
+
+.facets-item-cell-table-add-to-cart-quantity {
+	@extend .input-medium;
+}
+
+.facets-item-cell-table-add-to-cart-button {
+	@extend .button-primary;
+	@extend .button-medium;
+}
+
+.facets-item-cell-table-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-table-cheaper-options {
+ margin-bottom: -18px;
+ color: #085a99;
+ font-size: 0.72em;
+ font-weight: bold;
+ text-align: left;
+ clear: both;
+ line-height: 18px;
+ 
+ a {
+  color: #085a99;
+  
+  &:hover {
+   text-decoration: underline;
+  }
+ }
+}
+
+.facets-item-cell-table-addtocart-btn {
+	@extend .button-primary;
+	@extend .button-small;
+ margin-top: 23px;
+ margin-bottom: 23px;
+}
+
+.facets-item-cell-table-addtocart-btn-icon {
+	@extend .fa;
+	@extend %fa-shopping-cart;
+}
+
+.facets-item-cell-table-footer-free-delivery {
+ color: #000;
+ text-align: left;
+ margin-top: -18px;
+ font-size: 0.8em;
+}

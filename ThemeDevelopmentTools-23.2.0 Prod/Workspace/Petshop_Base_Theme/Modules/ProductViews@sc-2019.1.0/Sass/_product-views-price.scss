@@ -1,0 +1,416 @@
+.product-views-price-lead{
+	@extend .middle-price;
+ margin-right: 2px;
+}
+
+.product-views-price-old{
+	@extend .old-price;
+ white-space: nowrap;
+}
+
+.product-views-price-login-to-see-prices-highlighted {
+	margin-top: $sc-margin-lv2;
+    margin-bottom: $sc-margin-lv2;
+}
+.product-views-price-login-to-see-prices {
+    @extend .message;
+}
+
+.product-views-price-message {
+	font-weight: normal;
+}
+
+
+
+
+.product-views-subscription-price-table-rrp {
+ margin: 0 0 6px;
+ text-align: center;
+ color: #000;
+ font-size: 19px;
+ font-weight: 400;
+}
+
+.product-views-subscription-price-table table {
+ width: 100%;
+}
+
+.product-views-subscription-price-table table thead td {
+ padding: 5px;
+ color: #fff;
+ background-color: #4757a7;
+ border: 0 none;
+ font-size: 14px;
+ font-weight: bold;
+}
+
+.product-views-subscription-price-table table thead td.product-views-subscription-price-table-label-heading {
+ border-radius: 10px 0 0 0;
+}
+
+.product-views-subscription-price-table table thead td.product-views-subscription-price-table-label-heading + td.product-views-subscription-price-table-label-heading {
+ border-radius: 0;
+}
+
+.product-views-subscription-price-table table thead td.product-views-subscription-price-table-savings-heading {
+ border-radius: 0 10px 0 0;
+}
+
+.product-views-subscription-price-table table td {
+ width: auto;
+ padding: 6px 2px;
+ vertical-align: middle;
+ background-color: #fff;
+ font-size: 14px;
+ font-weight: 400;
+ text-align: center;
+ color: #000;
+ border: 0 none;
+}
+
+.product-views-subscription-price-table table tbody tr:nth-child(2n) td {
+ background-color: #fff;
+}
+
+.product-views-subscription-price-table table tbody tr:nth-child(3n) td,
+.product-views-subscription-price-table table tbody tr:nth-child(4n) td {
+ background-color: #f2f2f2;
+}
+
+.product-views-subscription-price-table-select-heading,
+.product-views-subscription-price-table-select-td {
+ background-color: #fff !important;
+ padding-right: 5px !important;
+}
+
+.product-views-subscription-price-table-quantity-heading,
+.product-views-subscription-price-table-quantity-td {
+ padding-left: 5px;
+}
+
+.product-views-subscription-price-table table tbody td .free-delivery {
+ display: inline;
+ font-weight: normal;
+ font-size: 10px;
+}
+
+.product-views-subscription-price-table-lead-td {
+ color: #b01818 !important;
+}
+
+.product-views-subscription-price-table-select {
+ margin: 6px 0 0 !important;
+ position: relative;
+}
+
+.product-views-subscription-price-table-select:before {
+ width: 17px;
+ height: 17px;
+ border-radius: 17px;
+ top: -4px;
+ left: -4px;
+ position: absolute;
+ background-color: #fff;
+ content: '';
+ display: inline-block;
+ visibility: visible;
+ border: 1px solid #dcdcdc;
+}
+
+.product-views-subscription-price-table-select:after {
+ width: 11px;
+ height: 11px;
+ border-radius: 11px;
+ top: 0px;
+ left: 0px;
+ position: absolute;
+ background-color: #fff;
+ content: '';
+ display: inline-block;
+ visibility: visible;
+ border: 0 none;
+}
+
+.product-views-subscription-price-table-select:checked:after {
+ width: 11px;
+ height: 11px;
+ border-radius: 11px;
+ top: 0px;
+ left: 0px;
+ position: absolute;
+ background-color: #0071c0;
+ content: '';
+ display: inline-block;
+ visibility: visible;
+ border: 0 none;
+}
+
+.product-views-subscription-price-table-label-td {
+ /*text-align: right !important;*/
+}
+
+.product-views-subscription-price-table-label-discount {
+ color: #b01818;
+}
+
+.product-views-subscription-price-table-lead {
+ font-size: 16px;
+ font-weight: bold;
+}
+
+.product-views-subscription-price-table-quantity {
+ font-size: 15px;
+}
+
+.product-views-price-pricing-message {
+ margin-top: -10px;
+ font-family: Calibri,Arial,Helvetica,sans-serif,Trebuchet MS;
+ font-size: 14px;
+ color: #878486;
+}
+
+.product-views-price-starting {
+ @extend .product-views-price-lead;
+ font-size: 1.1em;
+ 
+ span {
+  font-size: 0.5em;
+ }
+}
+
+.product-views-subscription-price-table-2022 {
+ @extend .product-views-subscription-price-table;
+ 
+ table {
+  margin-top: 20px;
+ }
+ 
+ table thead td {
+  border-bottom: 5px solid #4757a7;
+  background: #fff;
+  
+  &:last-child {
+   border-color: none;
+  }
+ }
+ 
+ .product-views-subscription-price-table-label-heading-price {
+  position: relative;
+  width: 17%;
+  border-radius: 12px 12px 0 0;
+  font-size: 9.5px;
+  text-transform: none;
+  background: #4757a7;
+  white-space: nowrap;
+  line-height: 1em;
+  padding: 6px 3px 3px;
+  
+  .product-details-quickview & {
+   font-size: 9.5px;
+  }
+ }
+ 
+ .product-views-subscription-price-table-rrp {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: line-through;
+ } 
+ 
+ .product-details-quickview .product-views-subscription-price-table-rrp {
+  font-size: 12px;
+ }
+ 
+ .product-views-subscription-price-table-label,
+ .product-views-subscription-price-table-label-discount,
+ .product-views-subscription-price-table-lead,
+ .product-views-subscription-price-table-lead-discount {
+  display: block;
+  padding: 5px 10px;
+  line-height: 18px;
+  /*line-height: 34px;
+  white-space: nowrap;*/
+ }
+ 
+ .product-views-subscription-price-table-label-discount {
+  color: #e42940;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+ }
+ 
+ .product-views-subscription-price-table-lead {
+  padding: 10px 10px;
+  background-color: #f9f9f9;
+  color: #000 !important;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+ }
+ 
+ .product-views-subscription-price-table-lead-discount {
+  padding: 10px 10px;
+  background-color: #f9f9f9;
+  color: #e42940;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+ }
+ 
+ .product-views-subscription-price-table-savings-td {
+  text-align: center;
+ }
+   
+ .product-views-subscription-price-table-savings {
+  padding: 6px 5px;
+  font-size: 10px;
+ }
+   
+ .product-views-subscription-price-table-savings-discount {
+  padding: 6px 5px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #e42940;
+ }
+   
+ .product-views-subscription-price-table-label-td {
+  padding: 0;
+  text-align: left;
+ }
+ 
+ .product-views-subscription-price-table-select {
+  margin: 6px 6px 0 10px !important;
+ }
+ 
+ .product-views-subscription-price-table-select-heading,
+ .product-views-subscription-price-table-select-td {
+  background-color: unset !important;
+  padding-right: unset !important;
+ }
+ 
+ .product-views-subscription-price-table-quantity {
+  padding: 6px 10px;
+  white-space: nowrap;
+  text-transform: lowercase;
+ }
+ 
+ .product-views-subscription-price-table-label .product-views-subscription-price-table-label-discount,
+ .product-views-subscription-price-table-lead-td .free-delivery {
+  display: none;
+ }
+ 
+ table tbody {
+ 
+  border-bottom: 1px solid #d0d5ee;
+ 
+  td {
+   padding: 0;
+  }
+  
+  tr:nth-child(3n) td,
+  tr:nth-child(4n) td {
+   background-color: unset;
+  }
+  
+  tr:nth-child(2n+1) td {
+   background-color: #e8eaf6;
+   
+   .product-views-subscription-price-table-lead,
+   .product-views-subscription-price-table-lead-discount {
+    background-color: #eeeff5;
+   }
+  }
+   
+  tr:nth-child(2n+1) .product-views-subscription-price-table-select-td {
+   background-color: #e8eaf6 !important;
+  }
+
+  tr.selected td {
+   background-color: #b3bbe3;
+   
+   &.product-views-subscription-price-table-select-td {
+    background-color: #b3bbe3 !important;
+   }
+   
+   &.product-views-subscription-price-table-lead-td,
+   .product-views-subscription-price-table-lead-discount {
+    background-color: #d3d7eb;
+   }
+   
+   .product-views-subscription-price-table-lead {
+    background-color: #d3d7eb !important;
+   }
+   
+   .product-views-subscription-price-table-label-first-price,
+   .product-views-subscription-price-table-savings-first-price {
+    background-color: #b3bbe3;
+   }
+   
+   .product-views-subscription-price-table-lead-first-price {
+    background-color: #d3d7eb;
+   }
+  }
+ }
+ 
+ .product-views-subscription-price-table-label-first-price,
+ .product-views-subscription-price-table-lead-first-price,
+ .product-views-subscription-price-table-savings-first-price {
+  display: block;
+  padding: 0 10px;
+  background-color: #e8eaf6;
+  color: #e42940;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 23px;
+  white-space: nowrap;
+ }
+ 
+ .product-views-subscription-price-table-lead-first-price {
+  padding: 0 2px;
+  font-size: 16px;
+  background-color: #eeeff5;
+  font-weight: bold;
+  text-align: center;
+ }
+ 
+ .product-views-subscription-price-table-savings-first-price {
+  padding: 0 5px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+ }
+ 
+ .product-views-subscription-price-table-label-repeat-price,
+ .product-views-subscription-price-table-lead-repeat-price,
+ .product-views-subscription-price-table-savings-repeat-price {
+  display: block;
+  padding: 0 10px;
+  background-color: #f4f4f4;
+  color: #000;
+  font-size: 10px;
+  line-height: 23px;
+  white-space: nowrap;
+ }
+ 
+ .product-views-subscription-price-table-lead-repeat-price {
+  padding: 0 2px;
+  font-size: 16px;
+  text-align: center;
+ }
+ 
+ .product-views-subscription-price-table-savings-repeat-price {
+  padding: 0 5px;
+  font-size: 10px;
+  text-align: center;
+ }
+ 
+ form table tbody td.product-views-subscription-price-table-lead-td {
+  background-color: #f9f9f9;
+  text-align: center;
+ }
+}
