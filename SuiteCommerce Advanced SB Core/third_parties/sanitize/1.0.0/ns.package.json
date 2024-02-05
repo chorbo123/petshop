@@ -1,0 +1,14 @@
+{
+    "gulp": {
+        "javascript": [
+            "sanitize.min.js"
+        ],
+        "ssp-libraries": [
+            "sanitize.min.js"
+        ],
+        "suitescript2": [
+            "sanitize.min.js"
+        ]
+    },
+    "jshint": "false"
+}

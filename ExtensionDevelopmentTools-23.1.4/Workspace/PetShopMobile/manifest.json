@@ -1,0 +1,79 @@
+{
+	"name": "PetShopMobile",
+	"fantasyName": "PetShop Mobile",
+	"vendor": "PetShop",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Includes modules for the mobile version of petshop: best sellers and images.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/BestSellers.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Images/Configuration/Images.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BestSellers/Templates/petshop_bestsellers_items.tpl",
+					"Modules/BestSellers/Templates/petshop_petshopbestsellers_bestsellers.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/BestSellers/Sass/_petshopbestsellers-bestsellers.scss"
+		},
+		"files": [
+			"Modules/BestSellers/Sass/_petshopbestsellers-bestsellers.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/PetShop.PetShopMobile.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/PetShop.PetShopMobile.Main.js",
+					"Modules/BestSellers/JavaScript/BestSellers.View.js",
+					"Modules/BestSellers/JavaScript/PetShop.BestSeller.ItemView.js",
+					"Modules/BestSellers/JavaScript/PetShop.PetShopBestSellers.BestSellers.js",
+					"Modules/BestSellers/JavaScript/PetShop.PetShopBestSellers.BestSellers.Model.js",
+					"Modules/Images/JavaScript/PetShop.PetShopMobile.Images.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/PetShop.PetShopMobile.Main.js",
+		"files": [
+			"Modules/BestSellers/SuiteScript/BestSellers.ServiceController.js",
+			"Modules/Main/SuiteScript/PetShop.PetShopMobile.Main.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PetShop/PetShopMobile@1.0.0",
+	"activation_id": "6",
+	"extension_id": "6803"
+}

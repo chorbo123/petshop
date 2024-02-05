@@ -9,7 +9,7 @@ const querystring = require('querystring');
 const nsRequest = require('ns-request');
 const { exec } = require('child_process');
 
-const port = '7777';
+const port = '7779';
 const service = 'tba';
 const tokenPath = path.join(os.homedir(), '.nstba');
 

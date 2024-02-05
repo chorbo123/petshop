@@ -1,0 +1,10 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/Backbone.FormView@sc-2019.1.6/JavaScript/Backbone.FormView.js": "JavaScript/Backbone.FormView.js"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "invoice",
+        "title": "Invoice",
+        "description": "Invoice configuration related to web forms.",
+        "group": "advancedSettings"
+    },
+    "properties": {
+        "checkoutApp.invoiceTermsAndConditions": {
+            "group": "advancedSettings",
+            "subtab": "invoice",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Invoice Terms and Conditions",
+            "description": "Enter the text of the invoice terms and conditions in HTML format.",
+            "default": "<h4>Invoice Terms and Conditions</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+        },
+        "checkoutApp.invoiceMaxCountPayment": {
+            "group": "advancedSettings",
+            "subtab": "invoice",
+            "type": "integer",
+            "title": "Maximum number of invoices that can be paid",
+            "description": "Enter the maximum number of invoices that can be paid at the same time.",
+            "default": 20
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "gulp": {
+        "configuration": [
+            "Configuration/*.json"
+        ]
+    },
+    "overrides": {
+        "Advanced/CheckoutApplication/Configuration/CheckoutApplication.json": "Configuration/CheckoutApplicationExt.json"
+    }
+    
+}

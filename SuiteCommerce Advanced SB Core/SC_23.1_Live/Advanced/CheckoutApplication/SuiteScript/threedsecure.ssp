@@ -1,0 +1,60 @@
+<%/*
+	© 2020 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/%><%
+    var Application = require ('Application'),
+    ModelsInit = require('SC.Models.Init'),
+    SecurityHeaders = require('SecurityHeaders'),
+    _ = require('underscore'),
+    CardHolderAuthenticationUtils = require ('CardHolderAuthentication.Utils'),
+    CardHolderAuthenticationModel = require ('CardHolderAuthentication.Model');
+
+    SecurityHeaders.addSecurityHeaders(response);
+
+    var order_info = {};
+    var returnedParameters = request.body;
+    var callbackModelType = request.getParameter('type');
+
+    try
+    {
+        if (ModelsInit.session.isLoggedIn2()) {
+            response.setCDNCacheable(response.CACHE_DURATION_UNIQUE);
+            if (returnedParameters) {
+                returnedParameters = '{"' + returnedParameters.replace(/( |&)/g, '", "').replace(/=/g, '": "') + '"}';
+                order_info.confirmation = CardHolderAuthenticationModel.submit(JSON.parse(returnedParameters), CardHolderAuthenticationUtils.getCallbackModel(callbackModelType));
+            }
+        } else {
+            order_info.confirmation =
+            {
+                statuscode: 'error',
+                reasoncode: 'ERR_WS_REQUIRE_CUSTOMER_LOGIN',
+                cardholderauthenticationid: null,
+                body: _.escape(this.request.body)
+            };
+        }
+    }
+    catch(e)
+    {
+        order_info =
+            {
+                errorMessage: e
+            };
+
+        ModelsInit.context.setSessionObject('cardHolderAuthenticationRecordId', null);
+        order_info.confirmation = Application.processError(e);
+    }
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>3D Secure Authentication</title>
+</head>
+<body>
+<script type="text/javascript">
+    parent.process3DSecure(<%= JSON.stringify(order_info) %>);
+</script>
+</body>
+</html>

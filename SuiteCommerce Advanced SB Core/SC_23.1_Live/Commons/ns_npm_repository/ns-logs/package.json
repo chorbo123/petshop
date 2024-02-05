@@ -1,0 +1,14 @@
+{
+    "name": "ns-logs",
+    "version": "1.0.0",
+    "description": "NS logs",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --config ns-logs.jest.config.js ns-logsTest.js"
+    },
+    "author": "",
+    "devDependencies": {
+        "jest": "29.5.0",
+        "jest-junit": "16.0.0"
+    }
+}

@@ -1,7 +1,7 @@
 {
     "dbConfig": {
         "keepalive": false
-    ,   "port": 7777
+    ,   "port": 7779
     ,   "https": false
     ,   "key": "KEYPEM"
     ,   "cert": "CERTPEM"
@@ -9,7 +9,7 @@
 
 ,   "scaffolding": {
         "keepalive": false
-    ,   "port": 7777
+    ,   "port": 7779
     }
 
 ,   "fetchConfig": {}

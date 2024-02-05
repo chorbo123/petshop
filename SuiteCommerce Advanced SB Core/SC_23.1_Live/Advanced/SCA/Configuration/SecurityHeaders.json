@@ -1,0 +1,59 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "security",
+        "title": "Security",
+        "description": "Configure Security",
+        "group": "advancedSettings",
+        "docRef": "section_159051175325"
+    },
+
+    "properties": {
+        "security.allowFraming": {
+            "group": "advancedSettings",
+            "subtab": "security",
+            "type": "string",
+            "title": "Allow Site to be Framed",
+            "description": "Set who can frame your site.\nDISALLOW FRAMING: Site is only allowed to be framed by itself\nALLOW FRAMING: Site is allowed to be framed by anyone\nALLOW FRAMING CUSTOM: Site is allowed to be framed by \"Allow Site to be Framed By\" list",
+            "enum": ["DISALLOW FRAMING", "ALLOW FRAMING", "ALLOW FRAMING CUSTOM"],
+            "default": "DISALLOW FRAMING"
+        },
+        "security.allowFramingBy": {
+            "group": "advancedSettings",
+            "subtab": "security",
+            "type": "array",
+            "title": "Allow Site to be Framed By",
+            "description": "Set the list of origins that can frame your site when using \"ALLOW FRAMING CUSTOM\"\nIf scheme is not provided, https is assumed for X-Frame-Options header",
+            "items": {
+                "type": "string",
+                "title": "Origin"
+            },
+            "default": ["SAMEORIGIN"]
+        },
+        "security.headers": {
+            "group": "advancedSettings",
+            "subtab": "security",
+            "type": "array",
+            "title": "Add Headers to SSP Responses. <a target='_blank' href='/app/help/helpcenter.nl?fid=section_4418229131.html#subsect_1558529145'>Information about headers</a>",
+            "description": "Add supported security headers to SSP responses. <a target='_blank' href='/app/help/helpcenter.nl?fid=section_4418229131.html#subsect_1558529145'>Information about headers</a>",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Name",
+                        "description": "The header that will be added",
+                        "mandatory": true
+                    },
+                    "value": {
+                        "type": "string",
+                        "title": "Value",
+                        "description": "The value of the header that will be added",
+                        "mandatory": true
+                    }
+                }
+            },
+            "default": []
+        }
+    }
+}

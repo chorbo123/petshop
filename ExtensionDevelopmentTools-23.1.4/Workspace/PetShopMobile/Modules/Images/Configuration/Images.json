@@ -1,0 +1,69 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "mobileImages",
+        "title": "Mobile Images",
+        "description": "Mobile Images",
+        "group": "extensions"
+    },
+    "properties": {
+        "mainBanners": {
+            "group": "extensions",
+            "subtab": "mobileImages",
+            "type": "array",
+            "title": "Main Banners",
+            "description": "Update the three main banners to be displayed",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "imageUrl": {
+                        "type": "string",
+                        "title": "Image Url",
+                        "description": "Url of the image to be displayed",
+                        "mandatory": true
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Redirect to",
+                        "description": "URL of the link",
+                        "mandatory": true
+                    },
+                    "alt": {
+                        "type": "string",
+                        "title": "Alternate Text",
+                        "description": "The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader)."
+                    }
+                }
+            }
+        },
+        "seasonalBanners": {
+            "group": "extensions",
+            "subtab": "mobileImages",
+            "type": "array",
+            "title": "Seasonal Banners",
+            "description": "Update the seasonal banners to be displayed",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "imageUrl": {
+                        "type": "string",
+                        "title": "Image Url",
+                        "description": "Url of the image to be displayed",
+                        "mandatory": true
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Redirect to",
+                        "description": "URL of the link",
+                        "mandatory": true
+                    },
+                    "alt": {
+                        "type": "string",
+                        "title": "Alternate Text",
+                        "description": "The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader)."
+                    }
+                }
+            }
+        }
+    }
+}

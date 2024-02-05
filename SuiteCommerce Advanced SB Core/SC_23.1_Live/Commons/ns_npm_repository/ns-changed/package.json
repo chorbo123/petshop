@@ -1,0 +1,19 @@
+{
+    "name": "ns-changed",
+    "version": "1.0.0",
+    "description": "Check if a file was changed",
+    "main": "ns-changed.js",
+    "scripts": {
+        "test": "jest --config ns-changed.jest.config.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "through2": "3.0.1"
+    },
+    "devDependencies": {
+        "jest": "29.5.0",
+        "node-mocks": "file:../node-mocks"
+    }
+}

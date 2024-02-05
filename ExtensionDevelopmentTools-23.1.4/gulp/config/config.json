@@ -1,17 +1,17 @@
 {
     "dbConfig": {
         "keepalive": false,
-        "port": 7777,
+        "port": 7779,
         "https": false,
         "key": "KEYPEM",
         "cert": "CERTPEM"
     },
     "scaffolding": {
         "keepalive": false,
-        "port": 7777
+        "port": 7779
     },
     "fetchConfig": {
-        "extension": "Blog,EmailDetection,PetShopBestSellers,PetShopCookieBanner,PetshopShopping,Slideshow"
+        "extension": "Blog,EmailDetection,PetShopCookieBanner,PetShopMobile,PetshopShopping,Slideshow"
     },
     "extensionMode": true,
     "preserveManifest": false,
@@ -29,10 +29,10 @@
         "extensions_dest_name": "Deploy_Extensions",
         "extmech_parent": "-15",
         "extensions_path": [
-            "Workspace/EmailDetection",
-            "Workspace/PetShopBestSellers",
-            "Workspace/PetShopCookieBanner",
             "Workspace/Blog",
+            "Workspace/EmailDetection",
+            "Workspace/PetShopCookieBanner",
+            "Workspace/PetShopMobile",
             "Workspace/PetshopShopping"
         ],
         "theme_path": "Workspace/Extras/Petshop_Base_Theme",
@@ -85,7 +85,7 @@
     },
     "credentials": {
         "user_agent": "sc-extension-devtools/23.1.4",
-        "authID": "3934951-sb1 Petshop SB1",
+        "authID": "3934951-sb1 Petshop SB NEW",
         "key": "aa517fab46b98f15a3b91e3d4d0332f8c9a4d7d587d14ea456165878446a39a5",
         "secret": "c6784cbdd99c41c30051130a52cbd4a6a99518bc895ca595e1b150e195db1695",
         "account": "3934951-SB1",
@@ -96,5 +96,6 @@
         "ssp_folder": "6194462",
         "is_scis": false
     },
-    "nsdeployPath": ".nsdeploy"
+    "nsdeployPath": ".nsdeploy",
+    "product": "gulp"
 }

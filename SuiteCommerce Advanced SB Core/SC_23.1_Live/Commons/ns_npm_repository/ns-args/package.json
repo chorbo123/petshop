@@ -1,0 +1,14 @@
+{
+    "name": "ns-args",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --config ns-args.jest.config.js ns-argsTest.js"
+    },
+    "author": "",
+    "devDependencies": {
+        "jest": "29.5.0",
+        "jest-junit": "16.0.0"
+    }
+}

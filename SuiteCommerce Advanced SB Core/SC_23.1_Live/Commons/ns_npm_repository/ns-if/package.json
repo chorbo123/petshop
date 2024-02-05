@@ -1,0 +1,17 @@
+{
+    "name": "ns-if",
+    "version": "1.0.0",
+    "description": "NS If",
+    "main": "nsif.js",
+    "scripts": {
+        "test": "jest --config nsIf.jest.config.js nsIfTest.js"
+    },
+    "dependencies": {
+        "through2": "3.0.1"
+    },
+    "devDependencies": {
+        "jest": "29.5.0",
+        "jest-junit": "16.0.0"
+    },
+    "author": ""
+}
